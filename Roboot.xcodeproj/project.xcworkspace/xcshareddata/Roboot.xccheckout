@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>AC154640-CA6E-4F57-B62E-BDD73757FA4B</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Roboot</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>7AABF809-52F5-46F4-B076-0F5ACE935AC8</key>
+		<string>https://github.com/sbuggay/Roboot.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Roboot.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>7AABF809-52F5-46F4-B076-0F5ACE935AC8</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/sbuggay/Roboot.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>7AABF809-52F5-46F4-B076-0F5ACE935AC8</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>7AABF809-52F5-46F4-B076-0F5ACE935AC8</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Roboot</string>
+		</dict>
+	</array>
+</dict>
+</plist>
