@@ -37,7 +37,7 @@
     return self;
 }
 
-- (void)setValue:(int)value atX:(int)x andY:(int)y {
+- (void)set:(int)value atX:(int)x andY:(int)y {
     map[y*_width+x] = @(value);
 }
 

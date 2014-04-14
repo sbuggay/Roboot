@@ -15,5 +15,6 @@
 
 - (id)initWithWidth:(int)width andHeight:(int)height;
 - (int)getValueAtX:(int)x andY:(int)y;
+- (void)set:(int)value atX:(int)x andY:(int)y;
 
 @end

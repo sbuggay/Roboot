@@ -49,6 +49,7 @@
 		07404D3618EC7DCC009C8D31 /* ButtonLeft.png in Resources */ = {isa = PBXBuildFile; fileRef = 07404D3218EC7DCC009C8D31 /* ButtonLeft.png */; };
 		07404D3718EC7DCC009C8D31 /* ButtonRight.png in Resources */ = {isa = PBXBuildFile; fileRef = 07404D3318EC7DCC009C8D31 /* ButtonRight.png */; };
 		07404D3818EC7DCC009C8D31 /* ButtonUp.png in Resources */ = {isa = PBXBuildFile; fileRef = 07404D3418EC7DCC009C8D31 /* ButtonUp.png */; };
+		F3A2108418FB8BBD0004BB55 /* MapReader.m in Sources */ = {isa = PBXBuildFile; fileRef = F3A2108318FB8BBD0004BB55 /* MapReader.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +112,8 @@
 		07404D3218EC7DCC009C8D31 /* ButtonLeft.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ButtonLeft.png; sourceTree = "<group>"; };
 		07404D3318EC7DCC009C8D31 /* ButtonRight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ButtonRight.png; sourceTree = "<group>"; };
 		07404D3418EC7DCC009C8D31 /* ButtonUp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ButtonUp.png; sourceTree = "<group>"; };
+		F3A2108218FB8BBD0004BB55 /* MapReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapReader.h; sourceTree = "<group>"; };
+		F3A2108318FB8BBD0004BB55 /* MapReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapReader.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +188,8 @@
 				070361FC18A86E16006AB301 /* MyScene.m */,
 				07404D2E18EBC51F009C8D31 /* Map.h */,
 				07404D2F18EBC51F009C8D31 /* Map.m */,
+				F3A2108218FB8BBD0004BB55 /* MapReader.h */,
+				F3A2108318FB8BBD0004BB55 /* MapReader.m */,
 				0703620018A86E16006AB301 /* Images.xcassets */,
 				070361E718A86E16006AB301 /* Supporting Files */,
 			);
@@ -372,6 +377,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				070361FD18A86E16006AB301 /* MyScene.m in Sources */,
+				F3A2108418FB8BBD0004BB55 /* MapReader.m in Sources */,
 				07404D3018EBC51F009C8D31 /* Map.m in Sources */,
 				070361FA18A86E16006AB301 /* ViewController.m in Sources */,
 				070361F118A86E16006AB301 /* AppDelegate.m in Sources */,
