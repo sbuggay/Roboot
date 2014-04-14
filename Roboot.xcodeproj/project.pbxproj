@@ -25,6 +25,30 @@
 		0703620A18A86E16006AB301 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 070361E218A86E16006AB301 /* UIKit.framework */; };
 		0703621218A86E16006AB301 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0703621018A86E16006AB301 /* InfoPlist.strings */; };
 		0703621418A86E16006AB301 /* RobootTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0703621318A86E16006AB301 /* RobootTests.m */; };
+		07249E1A18DE95D5001C2F43 /* roboot_front.png in Resources */ = {isa = PBXBuildFile; fileRef = 07249E1918DE95D5001C2F43 /* roboot_front.png */; };
+		07249E2018DE9799001C2F43 /* battery.png in Resources */ = {isa = PBXBuildFile; fileRef = 07249E1B18DE9799001C2F43 /* battery.png */; };
+		07249E2118DE9799001C2F43 /* bell.png in Resources */ = {isa = PBXBuildFile; fileRef = 07249E1C18DE9799001C2F43 /* bell.png */; };
+		07249E2218DE9799001C2F43 /* block.png in Resources */ = {isa = PBXBuildFile; fileRef = 07249E1D18DE9799001C2F43 /* block.png */; };
+		07249E2318DE9799001C2F43 /* circuit.png in Resources */ = {isa = PBXBuildFile; fileRef = 07249E1E18DE9799001C2F43 /* circuit.png */; };
+		07249E2418DE9799001C2F43 /* fall.png in Resources */ = {isa = PBXBuildFile; fileRef = 07249E1F18DE9799001C2F43 /* fall.png */; };
+		07249E3118DE97DA001C2F43 /* mine.png in Resources */ = {isa = PBXBuildFile; fileRef = 07249E2518DE97DA001C2F43 /* mine.png */; };
+		07249E3218DE97DA001C2F43 /* portal-closed.png in Resources */ = {isa = PBXBuildFile; fileRef = 07249E2618DE97DA001C2F43 /* portal-closed.png */; };
+		07249E3318DE97DA001C2F43 /* portal-open.png in Resources */ = {isa = PBXBuildFile; fileRef = 07249E2718DE97DA001C2F43 /* portal-open.png */; };
+		07249E3418DE97DA001C2F43 /* roboot_back.png in Resources */ = {isa = PBXBuildFile; fileRef = 07249E2818DE97DA001C2F43 /* roboot_back.png */; };
+		07249E3518DE97DA001C2F43 /* roboot_left.png in Resources */ = {isa = PBXBuildFile; fileRef = 07249E2918DE97DA001C2F43 /* roboot_left.png */; };
+		07249E3618DE97DA001C2F43 /* roboot_right.png in Resources */ = {isa = PBXBuildFile; fileRef = 07249E2A18DE97DA001C2F43 /* roboot_right.png */; };
+		07249E3718DE97DA001C2F43 /* robot.png in Resources */ = {isa = PBXBuildFile; fileRef = 07249E2B18DE97DA001C2F43 /* robot.png */; };
+		07249E3818DE97DA001C2F43 /* screen.png in Resources */ = {isa = PBXBuildFile; fileRef = 07249E2C18DE97DA001C2F43 /* screen.png */; };
+		07249E3918DE97DA001C2F43 /* song.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 07249E2D18DE97DA001C2F43 /* song.mp3 */; };
+		07249E3A18DE97DA001C2F43 /* tile.png in Resources */ = {isa = PBXBuildFile; fileRef = 07249E2E18DE97DA001C2F43 /* tile.png */; };
+		07249E3B18DE97DA001C2F43 /* wall.png in Resources */ = {isa = PBXBuildFile; fileRef = 07249E2F18DE97DA001C2F43 /* wall.png */; };
+		07249E3C18DE97DA001C2F43 /* wrench.png in Resources */ = {isa = PBXBuildFile; fileRef = 07249E3018DE97DA001C2F43 /* wrench.png */; };
+		07249E3E18DE98F7001C2F43 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07249E3D18DE98F6001C2F43 /* AVFoundation.framework */; };
+		07404D3018EBC51F009C8D31 /* Map.m in Sources */ = {isa = PBXBuildFile; fileRef = 07404D2F18EBC51F009C8D31 /* Map.m */; };
+		07404D3518EC7DCC009C8D31 /* ButtonDown.png in Resources */ = {isa = PBXBuildFile; fileRef = 07404D3118EC7DCC009C8D31 /* ButtonDown.png */; };
+		07404D3618EC7DCC009C8D31 /* ButtonLeft.png in Resources */ = {isa = PBXBuildFile; fileRef = 07404D3218EC7DCC009C8D31 /* ButtonLeft.png */; };
+		07404D3718EC7DCC009C8D31 /* ButtonRight.png in Resources */ = {isa = PBXBuildFile; fileRef = 07404D3318EC7DCC009C8D31 /* ButtonRight.png */; };
+		07404D3818EC7DCC009C8D31 /* ButtonUp.png in Resources */ = {isa = PBXBuildFile; fileRef = 07404D3418EC7DCC009C8D31 /* ButtonUp.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +86,31 @@
 		0703620F18A86E16006AB301 /* RobootTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RobootTests-Info.plist"; sourceTree = "<group>"; };
 		0703621118A86E16006AB301 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0703621318A86E16006AB301 /* RobootTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RobootTests.m; sourceTree = "<group>"; };
+		07249E1918DE95D5001C2F43 /* roboot_front.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = roboot_front.png; sourceTree = "<group>"; };
+		07249E1B18DE9799001C2F43 /* battery.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = battery.png; sourceTree = "<group>"; };
+		07249E1C18DE9799001C2F43 /* bell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bell.png; sourceTree = "<group>"; };
+		07249E1D18DE9799001C2F43 /* block.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = block.png; sourceTree = "<group>"; };
+		07249E1E18DE9799001C2F43 /* circuit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = circuit.png; sourceTree = "<group>"; };
+		07249E1F18DE9799001C2F43 /* fall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fall.png; sourceTree = "<group>"; };
+		07249E2518DE97DA001C2F43 /* mine.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mine.png; sourceTree = "<group>"; };
+		07249E2618DE97DA001C2F43 /* portal-closed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "portal-closed.png"; sourceTree = "<group>"; };
+		07249E2718DE97DA001C2F43 /* portal-open.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "portal-open.png"; sourceTree = "<group>"; };
+		07249E2818DE97DA001C2F43 /* roboot_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = roboot_back.png; sourceTree = "<group>"; };
+		07249E2918DE97DA001C2F43 /* roboot_left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = roboot_left.png; sourceTree = "<group>"; };
+		07249E2A18DE97DA001C2F43 /* roboot_right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = roboot_right.png; sourceTree = "<group>"; };
+		07249E2B18DE97DA001C2F43 /* robot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = robot.png; sourceTree = "<group>"; };
+		07249E2C18DE97DA001C2F43 /* screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screen.png; sourceTree = "<group>"; };
+		07249E2D18DE97DA001C2F43 /* song.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = song.mp3; sourceTree = "<group>"; };
+		07249E2E18DE97DA001C2F43 /* tile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tile.png; sourceTree = "<group>"; };
+		07249E2F18DE97DA001C2F43 /* wall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wall.png; sourceTree = "<group>"; };
+		07249E3018DE97DA001C2F43 /* wrench.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wrench.png; sourceTree = "<group>"; };
+		07249E3D18DE98F6001C2F43 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		07404D2E18EBC51F009C8D31 /* Map.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Map.h; sourceTree = "<group>"; };
+		07404D2F18EBC51F009C8D31 /* Map.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Map.m; sourceTree = "<group>"; };
+		07404D3118EC7DCC009C8D31 /* ButtonDown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ButtonDown.png; sourceTree = "<group>"; };
+		07404D3218EC7DCC009C8D31 /* ButtonLeft.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ButtonLeft.png; sourceTree = "<group>"; };
+		07404D3318EC7DCC009C8D31 /* ButtonRight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ButtonRight.png; sourceTree = "<group>"; };
+		07404D3418EC7DCC009C8D31 /* ButtonUp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ButtonUp.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +118,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07249E3E18DE98F7001C2F43 /* AVFoundation.framework in Frameworks */,
 				070361E118A86E16006AB301 /* CoreGraphics.framework in Frameworks */,
 				070361E318A86E16006AB301 /* UIKit.framework in Frameworks */,
 				070361E518A86E16006AB301 /* SpriteKit.framework in Frameworks */,
@@ -111,6 +161,7 @@
 		070361DD18A86E16006AB301 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				07249E3D18DE98F6001C2F43 /* AVFoundation.framework */,
 				070361DE18A86E16006AB301 /* Foundation.framework */,
 				070361E018A86E16006AB301 /* CoreGraphics.framework */,
 				070361E218A86E16006AB301 /* UIKit.framework */,
@@ -123,6 +174,7 @@
 		070361E618A86E16006AB301 /* Roboot */ = {
 			isa = PBXGroup;
 			children = (
+				07A2993C18FB82E000038483 /* resources */,
 				070361EF18A86E16006AB301 /* AppDelegate.h */,
 				070361F018A86E16006AB301 /* AppDelegate.m */,
 				070361F218A86E16006AB301 /* Main_iPhone.storyboard */,
@@ -131,7 +183,8 @@
 				070361F918A86E16006AB301 /* ViewController.m */,
 				070361FB18A86E16006AB301 /* MyScene.h */,
 				070361FC18A86E16006AB301 /* MyScene.m */,
-				070361FE18A86E16006AB301 /* Spaceship.png */,
+				07404D2E18EBC51F009C8D31 /* Map.h */,
+				07404D2F18EBC51F009C8D31 /* Map.m */,
 				0703620018A86E16006AB301 /* Images.xcassets */,
 				070361E718A86E16006AB301 /* Supporting Files */,
 			);
@@ -165,6 +218,36 @@
 				0703621018A86E16006AB301 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		07A2993C18FB82E000038483 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				070361FE18A86E16006AB301 /* Spaceship.png */,
+				07249E1918DE95D5001C2F43 /* roboot_front.png */,
+				07249E1B18DE9799001C2F43 /* battery.png */,
+				07249E1C18DE9799001C2F43 /* bell.png */,
+				07249E1D18DE9799001C2F43 /* block.png */,
+				07249E1E18DE9799001C2F43 /* circuit.png */,
+				07249E1F18DE9799001C2F43 /* fall.png */,
+				07249E2518DE97DA001C2F43 /* mine.png */,
+				07249E2618DE97DA001C2F43 /* portal-closed.png */,
+				07249E2718DE97DA001C2F43 /* portal-open.png */,
+				07249E2818DE97DA001C2F43 /* roboot_back.png */,
+				07249E2918DE97DA001C2F43 /* roboot_left.png */,
+				07249E2A18DE97DA001C2F43 /* roboot_right.png */,
+				07249E2B18DE97DA001C2F43 /* robot.png */,
+				07249E2C18DE97DA001C2F43 /* screen.png */,
+				07249E2D18DE97DA001C2F43 /* song.mp3 */,
+				07249E2E18DE97DA001C2F43 /* tile.png */,
+				07249E2F18DE97DA001C2F43 /* wall.png */,
+				07249E3018DE97DA001C2F43 /* wrench.png */,
+				07404D3118EC7DCC009C8D31 /* ButtonDown.png */,
+				07404D3218EC7DCC009C8D31 /* ButtonLeft.png */,
+				07404D3318EC7DCC009C8D31 /* ButtonRight.png */,
+				07404D3418EC7DCC009C8D31 /* ButtonUp.png */,
+			);
+			name = resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,11 +326,33 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07249E2018DE9799001C2F43 /* battery.png in Resources */,
+				07249E3C18DE97DA001C2F43 /* wrench.png in Resources */,
+				07249E3918DE97DA001C2F43 /* song.mp3 in Resources */,
+				07249E3518DE97DA001C2F43 /* roboot_left.png in Resources */,
+				07249E3418DE97DA001C2F43 /* roboot_back.png in Resources */,
+				07249E2418DE9799001C2F43 /* fall.png in Resources */,
+				07249E3B18DE97DA001C2F43 /* wall.png in Resources */,
 				070361FF18A86E16006AB301 /* Spaceship.png in Resources */,
+				07249E2218DE9799001C2F43 /* block.png in Resources */,
+				07249E2118DE9799001C2F43 /* bell.png in Resources */,
 				0703620118A86E16006AB301 /* Images.xcassets in Resources */,
 				070361F718A86E16006AB301 /* Main_iPad.storyboard in Resources */,
+				07404D3718EC7DCC009C8D31 /* ButtonRight.png in Resources */,
 				070361F418A86E16006AB301 /* Main_iPhone.storyboard in Resources */,
+				07404D3518EC7DCC009C8D31 /* ButtonDown.png in Resources */,
+				07249E3218DE97DA001C2F43 /* portal-closed.png in Resources */,
+				07249E3118DE97DA001C2F43 /* mine.png in Resources */,
+				07249E3718DE97DA001C2F43 /* robot.png in Resources */,
+				07249E1A18DE95D5001C2F43 /* roboot_front.png in Resources */,
+				07404D3618EC7DCC009C8D31 /* ButtonLeft.png in Resources */,
+				07249E3618DE97DA001C2F43 /* roboot_right.png in Resources */,
+				07249E3318DE97DA001C2F43 /* portal-open.png in Resources */,
 				070361EB18A86E16006AB301 /* InfoPlist.strings in Resources */,
+				07249E3818DE97DA001C2F43 /* screen.png in Resources */,
+				07249E2318DE9799001C2F43 /* circuit.png in Resources */,
+				07249E3A18DE97DA001C2F43 /* tile.png in Resources */,
+				07404D3818EC7DCC009C8D31 /* ButtonUp.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +372,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				070361FD18A86E16006AB301 /* MyScene.m in Sources */,
+				07404D3018EBC51F009C8D31 /* Map.m in Sources */,
 				070361FA18A86E16006AB301 /* ViewController.m in Sources */,
 				070361F118A86E16006AB301 /* AppDelegate.m in Sources */,
 				070361ED18A86E16006AB301 /* main.m in Sources */,
@@ -490,6 +596,7 @@
 				0703621918A86E16006AB301 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0703621A18A86E16006AB301 /* Build configuration list for PBXNativeTarget "RobootTests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +605,7 @@
 				0703621C18A86E16006AB301 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

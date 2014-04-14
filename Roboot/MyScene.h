@@ -7,7 +7,19 @@
 //
 
 #import <SpriteKit/SpriteKit.h>
+#import <AVFoundation/AVFoundation.h>
 
-@interface MyScene : SKScene
+#import "Map.h"
 
+
+@interface MyScene : SKScene {
+    SKNode *roboot;
+    int x, y;
+}
+
+@property (nonatomic) AVAudioPlayer * backgroundMusicPlayer;
+
+@property (nonatomic) Map *map;
+@property (nonatomic) NSInteger width;
+@property (nonatomic) NSInteger height;
 @end
