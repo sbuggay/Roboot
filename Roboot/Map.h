@@ -10,6 +10,7 @@
 
 @interface Map : NSObject
 @property (nonatomic) NSMutableArray *map;
+@property (nonatomic) NSMutableArray *items;
 @property (nonatomic) NSInteger width;
 @property (nonatomic) NSInteger height;
 
