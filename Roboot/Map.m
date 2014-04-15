@@ -37,7 +37,7 @@
     return self;
 }
 
-- (void)setValue:(int)value atX:(int)x andY:(int)y {
+- (void)set:(int)value atX:(int)x andY:(int)y {
     map[y*_width+x] = @(value);
 }
 
@@ -46,3 +46,15 @@
 }
 
 @end
+
+/*
+Tiles       8
+Fall tiles	7
+wrenches	6
+battery     5
+pushblock	4
+start       3
+finish      2
+abyss       1
+wall        0
+*/
