@@ -48,6 +48,8 @@
 		07404D3618EC7DCC009C8D31 /* ButtonLeft.png in Resources */ = {isa = PBXBuildFile; fileRef = 07404D3218EC7DCC009C8D31 /* ButtonLeft.png */; };
 		07404D3718EC7DCC009C8D31 /* ButtonRight.png in Resources */ = {isa = PBXBuildFile; fileRef = 07404D3318EC7DCC009C8D31 /* ButtonRight.png */; };
 		07404D3818EC7DCC009C8D31 /* ButtonUp.png in Resources */ = {isa = PBXBuildFile; fileRef = 07404D3418EC7DCC009C8D31 /* ButtonUp.png */; };
+		07A2993F18FCB82200038483 /* StartScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A2993E18FCB82200038483 /* StartScene.m */; };
+		07A2994118FCC5F800038483 /* ButtonAccept.png in Resources */ = {isa = PBXBuildFile; fileRef = 07A2994018FCC5F800038483 /* ButtonAccept.png */; };
 		F373FE3218FCB68D0079ACC5 /* start.png in Resources */ = {isa = PBXBuildFile; fileRef = F373FE2F18FCB68D0079ACC5 /* start.png */; };
 		F373FE3318FCB68D0079ACC5 /* level complete.png in Resources */ = {isa = PBXBuildFile; fileRef = F373FE3018FCB68D0079ACC5 /* level complete.png */; };
 		F373FE3418FCB68D0079ACC5 /* fail screen.png in Resources */ = {isa = PBXBuildFile; fileRef = F373FE3118FCB68D0079ACC5 /* fail screen.png */; };
@@ -113,6 +115,9 @@
 		07404D3218EC7DCC009C8D31 /* ButtonLeft.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ButtonLeft.png; sourceTree = "<group>"; };
 		07404D3318EC7DCC009C8D31 /* ButtonRight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ButtonRight.png; sourceTree = "<group>"; };
 		07404D3418EC7DCC009C8D31 /* ButtonUp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ButtonUp.png; sourceTree = "<group>"; };
+		07A2993D18FCB82200038483 /* StartScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartScene.h; sourceTree = "<group>"; };
+		07A2993E18FCB82200038483 /* StartScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartScene.m; sourceTree = "<group>"; };
+		07A2994018FCC5F800038483 /* ButtonAccept.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ButtonAccept.png; sourceTree = "<group>"; };
 		F373FE2F18FCB68D0079ACC5 /* start.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = start.png; sourceTree = "<group>"; };
 		F373FE3018FCB68D0079ACC5 /* level complete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "level complete.png"; sourceTree = "<group>"; };
 		F373FE3118FCB68D0079ACC5 /* fail screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fail screen.png"; sourceTree = "<group>"; };
@@ -188,11 +193,10 @@
 				070361F518A86E16006AB301 /* Main_iPad.storyboard */,
 				070361F818A86E16006AB301 /* ViewController.h */,
 				070361F918A86E16006AB301 /* ViewController.m */,
-				F373FE2F18FCB68D0079ACC5 /* start.png */,
-				F373FE3018FCB68D0079ACC5 /* level complete.png */,
-				F373FE3118FCB68D0079ACC5 /* fail screen.png */,
 				070361FB18A86E16006AB301 /* MyScene.h */,
 				070361FC18A86E16006AB301 /* MyScene.m */,
+				07A2993D18FCB82200038483 /* StartScene.h */,
+				07A2993E18FCB82200038483 /* StartScene.m */,
 				07404D2E18EBC51F009C8D31 /* Map.h */,
 				07404D2F18EBC51F009C8D31 /* Map.m */,
 				F3A2108218FB8BBD0004BB55 /* MapReader.h */,
@@ -235,6 +239,9 @@
 		07A2993C18FB82E000038483 /* resources */ = {
 			isa = PBXGroup;
 			children = (
+				F373FE2F18FCB68D0079ACC5 /* start.png */,
+				F373FE3018FCB68D0079ACC5 /* level complete.png */,
+				F373FE3118FCB68D0079ACC5 /* fail screen.png */,
 				070361FE18A86E16006AB301 /* Spaceship.png */,
 				07249E1918DE95D5001C2F43 /* roboot_front.png */,
 				07249E1B18DE9799001C2F43 /* battery.png */,
@@ -256,6 +263,7 @@
 				07404D3118EC7DCC009C8D31 /* ButtonDown.png */,
 				07404D3218EC7DCC009C8D31 /* ButtonLeft.png */,
 				07404D3318EC7DCC009C8D31 /* ButtonRight.png */,
+				07A2994018FCC5F800038483 /* ButtonAccept.png */,
 				07404D3418EC7DCC009C8D31 /* ButtonUp.png */,
 			);
 			name = resources;
@@ -340,6 +348,7 @@
 				07249E2018DE9799001C2F43 /* battery.png in Resources */,
 				07249E3C18DE97DA001C2F43 /* wrench.png in Resources */,
 				07249E3918DE97DA001C2F43 /* song.mp3 in Resources */,
+				07A2994118FCC5F800038483 /* ButtonAccept.png in Resources */,
 				07249E3518DE97DA001C2F43 /* roboot_left.png in Resources */,
 				07249E3418DE97DA001C2F43 /* roboot_back.png in Resources */,
 				07249E2418DE9799001C2F43 /* fall.png in Resources */,
@@ -389,6 +398,7 @@
 				07404D3018EBC51F009C8D31 /* Map.m in Sources */,
 				070361FA18A86E16006AB301 /* ViewController.m in Sources */,
 				070361F118A86E16006AB301 /* AppDelegate.m in Sources */,
+				07A2993F18FCB82200038483 /* StartScene.m in Sources */,
 				070361ED18A86E16006AB301 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
