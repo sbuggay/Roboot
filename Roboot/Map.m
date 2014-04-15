@@ -28,8 +28,8 @@
         for(int i=0; i < (_width*_height); i++) [map addObject: @0];
         
         // replace 0s with something more interesting
-        for(int i = 0; i < 6; i++) {
-            for(int j = 0; j < 9; j++) {
+        for(int i = 0; i < width; i++) {
+            for(int j = 0; j < height; j++) {
                 map[i * _height+j] = @0;
             }
         }
@@ -45,16 +45,37 @@
     return (int) [map[y*_width+x] integerValue];
 }
 
+- (int)getWidth {
+    if (self) return (int)map[_width];
+    else return 0;
+}
+
+- (int)getHeight {
+    if (self) return (int)map[_height];
+    else return 0;
+}
+
+- (void)printCoordinates {
+    for (int y = 9; y >= 0; y--) {
+        for (int x = 0; x < 9; x++) {
+            printf("%d", [self getValueAtX:x andY:y]);
+            if (x % 8 == 0 && x > 1) {
+                printf("\n");
+            }
+        }
+    }
+}
+
 @end
 
 /*
-Tiles       8
-Fall tiles	7
-wrenches	6
-battery     5
-pushblock	4
-start       3
-finish      2
-abyss       1
-wall        0
-*/
+ Tiles       8
+ Fall tiles	7
+ wrenches	6
+ battery     5
+ pushblock	4
+ start       3
+ finish      2
+ abyss       1
+ wall        0
+ */
