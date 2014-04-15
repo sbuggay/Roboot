@@ -11,7 +11,7 @@
 
 @implementation MapReader
 
-- (Map*)readFile:(NSString*)fileName {
++ (Map*)readFile:(NSString*)fileName {
     
     NSError *error;
     NSString * buffer = [NSString stringWithContentsOfFile:fileName

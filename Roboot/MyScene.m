@@ -7,6 +7,7 @@
 //
 
 #import "MyScene.h"
+#import "MapReader.h"
 
 
 @implementation MyScene
@@ -27,6 +28,8 @@
                                        CGRectGetHeight(self.frame) - 30);
         
         [self addChild:myLabel];
+        
+        
         
         roboot = [SKSpriteNode spriteNodeWithImageNamed:@"roboot_front.png"];
         
