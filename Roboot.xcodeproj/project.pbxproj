@@ -27,7 +27,6 @@
 		0703621418A86E16006AB301 /* RobootTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0703621318A86E16006AB301 /* RobootTests.m */; };
 		07249E1A18DE95D5001C2F43 /* roboot_front.png in Resources */ = {isa = PBXBuildFile; fileRef = 07249E1918DE95D5001C2F43 /* roboot_front.png */; };
 		07249E2018DE9799001C2F43 /* battery.png in Resources */ = {isa = PBXBuildFile; fileRef = 07249E1B18DE9799001C2F43 /* battery.png */; };
-		07249E2118DE9799001C2F43 /* bell.png in Resources */ = {isa = PBXBuildFile; fileRef = 07249E1C18DE9799001C2F43 /* bell.png */; };
 		07249E2218DE9799001C2F43 /* block.png in Resources */ = {isa = PBXBuildFile; fileRef = 07249E1D18DE9799001C2F43 /* block.png */; };
 		07249E2318DE9799001C2F43 /* circuit.png in Resources */ = {isa = PBXBuildFile; fileRef = 07249E1E18DE9799001C2F43 /* circuit.png */; };
 		07249E2418DE9799001C2F43 /* fall.png in Resources */ = {isa = PBXBuildFile; fileRef = 07249E1F18DE9799001C2F43 /* fall.png */; };
@@ -89,7 +88,6 @@
 		0703621318A86E16006AB301 /* RobootTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RobootTests.m; sourceTree = "<group>"; };
 		07249E1918DE95D5001C2F43 /* roboot_front.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = roboot_front.png; sourceTree = "<group>"; };
 		07249E1B18DE9799001C2F43 /* battery.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = battery.png; sourceTree = "<group>"; };
-		07249E1C18DE9799001C2F43 /* bell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bell.png; sourceTree = "<group>"; };
 		07249E1D18DE9799001C2F43 /* block.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = block.png; sourceTree = "<group>"; };
 		07249E1E18DE9799001C2F43 /* circuit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = circuit.png; sourceTree = "<group>"; };
 		07249E1F18DE9799001C2F43 /* fall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fall.png; sourceTree = "<group>"; };
@@ -231,7 +229,6 @@
 				070361FE18A86E16006AB301 /* Spaceship.png */,
 				07249E1918DE95D5001C2F43 /* roboot_front.png */,
 				07249E1B18DE9799001C2F43 /* battery.png */,
-				07249E1C18DE9799001C2F43 /* bell.png */,
 				07249E1D18DE9799001C2F43 /* block.png */,
 				07249E1E18DE9799001C2F43 /* circuit.png */,
 				07249E1F18DE9799001C2F43 /* fall.png */,
@@ -340,7 +337,6 @@
 				07249E3B18DE97DA001C2F43 /* wall.png in Resources */,
 				070361FF18A86E16006AB301 /* Spaceship.png in Resources */,
 				07249E2218DE9799001C2F43 /* block.png in Resources */,
-				07249E2118DE9799001C2F43 /* bell.png in Resources */,
 				0703620118A86E16006AB301 /* Images.xcassets in Resources */,
 				070361F718A86E16006AB301 /* Main_iPad.storyboard in Resources */,
 				07404D3718EC7DCC009C8D31 /* ButtonRight.png in Resources */,
