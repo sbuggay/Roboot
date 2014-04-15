@@ -52,6 +52,9 @@
 		F373FE3318FCB68D0079ACC5 /* level complete.png in Resources */ = {isa = PBXBuildFile; fileRef = F373FE3018FCB68D0079ACC5 /* level complete.png */; };
 		F373FE3418FCB68D0079ACC5 /* fail screen.png in Resources */ = {isa = PBXBuildFile; fileRef = F373FE3118FCB68D0079ACC5 /* fail screen.png */; };
 		F3A2108418FB8BBD0004BB55 /* MapReader.m in Sources */ = {isa = PBXBuildFile; fileRef = F3A2108318FB8BBD0004BB55 /* MapReader.m */; };
+		F3A7566918FDE6F800402ACC /* level_1.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3A7566618FDE6F800402ACC /* level_1.txt */; };
+		F3A7566A18FDE6F800402ACC /* level_2.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3A7566718FDE6F800402ACC /* level_2.txt */; };
+		F3A7566B18FDE6F800402ACC /* level_3.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3A7566818FDE6F800402ACC /* level_3.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -118,6 +121,9 @@
 		F373FE3118FCB68D0079ACC5 /* fail screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fail screen.png"; sourceTree = "<group>"; };
 		F3A2108218FB8BBD0004BB55 /* MapReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapReader.h; sourceTree = "<group>"; };
 		F3A2108318FB8BBD0004BB55 /* MapReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapReader.m; sourceTree = "<group>"; };
+		F3A7566618FDE6F800402ACC /* level_1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = level_1.txt; sourceTree = "<group>"; };
+		F3A7566718FDE6F800402ACC /* level_2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = level_2.txt; sourceTree = "<group>"; };
+		F3A7566818FDE6F800402ACC /* level_3.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = level_3.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,6 +197,9 @@
 				F373FE2F18FCB68D0079ACC5 /* start.png */,
 				F373FE3018FCB68D0079ACC5 /* level complete.png */,
 				F373FE3118FCB68D0079ACC5 /* fail screen.png */,
+				F3A7566618FDE6F800402ACC /* level_1.txt */,
+				F3A7566718FDE6F800402ACC /* level_2.txt */,
+				F3A7566818FDE6F800402ACC /* level_3.txt */,
 				070361FB18A86E16006AB301 /* MyScene.h */,
 				070361FC18A86E16006AB301 /* MyScene.m */,
 				07404D2E18EBC51F009C8D31 /* Map.h */,
@@ -340,6 +349,7 @@
 				07249E2018DE9799001C2F43 /* battery.png in Resources */,
 				07249E3C18DE97DA001C2F43 /* wrench.png in Resources */,
 				07249E3918DE97DA001C2F43 /* song.mp3 in Resources */,
+				F3A7566B18FDE6F800402ACC /* level_3.txt in Resources */,
 				07249E3518DE97DA001C2F43 /* roboot_left.png in Resources */,
 				07249E3418DE97DA001C2F43 /* roboot_back.png in Resources */,
 				07249E2418DE9799001C2F43 /* fall.png in Resources */,
@@ -355,6 +365,7 @@
 				07249E3218DE97DA001C2F43 /* portal-closed.png in Resources */,
 				07249E3118DE97DA001C2F43 /* mine.png in Resources */,
 				07249E3718DE97DA001C2F43 /* robot.png in Resources */,
+				F3A7566A18FDE6F800402ACC /* level_2.txt in Resources */,
 				07249E1A18DE95D5001C2F43 /* roboot_front.png in Resources */,
 				07404D3618EC7DCC009C8D31 /* ButtonLeft.png in Resources */,
 				07249E3618DE97DA001C2F43 /* roboot_right.png in Resources */,
@@ -362,6 +373,7 @@
 				F373FE3318FCB68D0079ACC5 /* level complete.png in Resources */,
 				F373FE3418FCB68D0079ACC5 /* fail screen.png in Resources */,
 				070361EB18A86E16006AB301 /* InfoPlist.strings in Resources */,
+				F3A7566918FDE6F800402ACC /* level_1.txt in Resources */,
 				07249E3818DE97DA001C2F43 /* screen.png in Resources */,
 				07249E2318DE9799001C2F43 /* circuit.png in Resources */,
 				07249E3A18DE97DA001C2F43 /* tile.png in Resources */,
