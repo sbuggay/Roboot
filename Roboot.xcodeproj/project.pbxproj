@@ -49,14 +49,15 @@
 		07404D3718EC7DCC009C8D31 /* ButtonRight.png in Resources */ = {isa = PBXBuildFile; fileRef = 07404D3318EC7DCC009C8D31 /* ButtonRight.png */; };
 		07404D3818EC7DCC009C8D31 /* ButtonUp.png in Resources */ = {isa = PBXBuildFile; fileRef = 07404D3418EC7DCC009C8D31 /* ButtonUp.png */; };
 		07A2993F18FCB82200038483 /* StartScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A2993E18FCB82200038483 /* StartScene.m */; };
-		07A2994118FCC5F800038483 /* ButtonAccept.png in Resources */ = {isa = PBXBuildFile; fileRef = 07A2994018FCC5F800038483 /* ButtonAccept.png */; };
 		F373FE3218FCB68D0079ACC5 /* start.png in Resources */ = {isa = PBXBuildFile; fileRef = F373FE2F18FCB68D0079ACC5 /* start.png */; };
-		F373FE3318FCB68D0079ACC5 /* level complete.png in Resources */ = {isa = PBXBuildFile; fileRef = F373FE3018FCB68D0079ACC5 /* level complete.png */; };
-		F373FE3418FCB68D0079ACC5 /* fail screen.png in Resources */ = {isa = PBXBuildFile; fileRef = F373FE3118FCB68D0079ACC5 /* fail screen.png */; };
+		F373FE3318FCB68D0079ACC5 /* levelComplete.png in Resources */ = {isa = PBXBuildFile; fileRef = F373FE3018FCB68D0079ACC5 /* levelComplete.png */; };
+		F373FE3418FCB68D0079ACC5 /* failScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = F373FE3118FCB68D0079ACC5 /* failScreen.png */; };
 		F3A2108418FB8BBD0004BB55 /* MapReader.m in Sources */ = {isa = PBXBuildFile; fileRef = F3A2108318FB8BBD0004BB55 /* MapReader.m */; };
+		F3A36F5318FE42EC00A89FFB /* LossScene.m in Sources */ = {isa = PBXBuildFile; fileRef = F3A36F5218FE42EC00A89FFB /* LossScene.m */; };
 		F3A7566918FDE6F800402ACC /* level_1.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3A7566618FDE6F800402ACC /* level_1.txt */; };
 		F3A7566A18FDE6F800402ACC /* level_2.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3A7566718FDE6F800402ACC /* level_2.txt */; };
 		F3A7566B18FDE6F800402ACC /* level_3.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3A7566818FDE6F800402ACC /* level_3.txt */; };
+		F3DE4D1718FE3D2200AB8D94 /* WinScene.m in Sources */ = {isa = PBXBuildFile; fileRef = F3DE4D1618FE3D2200AB8D94 /* WinScene.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -122,13 +123,17 @@
 		07A2993E18FCB82200038483 /* StartScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartScene.m; sourceTree = "<group>"; };
 		07A2994018FCC5F800038483 /* ButtonAccept.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ButtonAccept.png; sourceTree = "<group>"; };
 		F373FE2F18FCB68D0079ACC5 /* start.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = start.png; sourceTree = "<group>"; };
-		F373FE3018FCB68D0079ACC5 /* level complete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "level complete.png"; sourceTree = "<group>"; };
-		F373FE3118FCB68D0079ACC5 /* fail screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fail screen.png"; sourceTree = "<group>"; };
+		F373FE3018FCB68D0079ACC5 /* levelComplete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = levelComplete.png; sourceTree = "<group>"; };
+		F373FE3118FCB68D0079ACC5 /* failScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = failScreen.png; sourceTree = "<group>"; };
 		F3A2108218FB8BBD0004BB55 /* MapReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapReader.h; sourceTree = "<group>"; };
 		F3A2108318FB8BBD0004BB55 /* MapReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapReader.m; sourceTree = "<group>"; };
+		F3A36F5118FE42EC00A89FFB /* LossScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LossScene.h; sourceTree = "<group>"; };
+		F3A36F5218FE42EC00A89FFB /* LossScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LossScene.m; sourceTree = "<group>"; };
 		F3A7566618FDE6F800402ACC /* level_1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = level_1.txt; sourceTree = "<group>"; };
 		F3A7566718FDE6F800402ACC /* level_2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = level_2.txt; sourceTree = "<group>"; };
 		F3A7566818FDE6F800402ACC /* level_3.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = level_3.txt; sourceTree = "<group>"; };
+		F3DE4D1518FE3D2200AB8D94 /* WinScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WinScene.h; sourceTree = "<group>"; };
+		F3DE4D1618FE3D2200AB8D94 /* WinScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WinScene.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,8 +205,8 @@
 				070361F818A86E16006AB301 /* ViewController.h */,
 				070361F918A86E16006AB301 /* ViewController.m */,
 				F373FE2F18FCB68D0079ACC5 /* start.png */,
-				F373FE3018FCB68D0079ACC5 /* level complete.png */,
-				F373FE3118FCB68D0079ACC5 /* fail screen.png */,
+				F373FE3018FCB68D0079ACC5 /* levelComplete.png */,
+				F373FE3118FCB68D0079ACC5 /* failScreen.png */,
 				F3A7566618FDE6F800402ACC /* level_1.txt */,
 				F3A7566718FDE6F800402ACC /* level_2.txt */,
 				F3A7566818FDE6F800402ACC /* level_3.txt */,
@@ -209,6 +214,10 @@
 				070361FC18A86E16006AB301 /* MyScene.m */,
 				07A2993D18FCB82200038483 /* StartScene.h */,
 				07A2993E18FCB82200038483 /* StartScene.m */,
+				F3A36F5118FE42EC00A89FFB /* LossScene.h */,
+				F3A36F5218FE42EC00A89FFB /* LossScene.m */,
+				F3DE4D1518FE3D2200AB8D94 /* WinScene.h */,
+				F3DE4D1618FE3D2200AB8D94 /* WinScene.m */,
 				07404D2E18EBC51F009C8D31 /* Map.h */,
 				07404D2F18EBC51F009C8D31 /* Map.m */,
 				F3A2108218FB8BBD0004BB55 /* MapReader.h */,
@@ -252,8 +261,8 @@
 			isa = PBXGroup;
 			children = (
 				F373FE2F18FCB68D0079ACC5 /* start.png */,
-				F373FE3018FCB68D0079ACC5 /* level complete.png */,
-				F373FE3118FCB68D0079ACC5 /* fail screen.png */,
+				F373FE3018FCB68D0079ACC5 /* levelComplete.png */,
+				F373FE3118FCB68D0079ACC5 /* failScreen.png */,
 				070361FE18A86E16006AB301 /* Spaceship.png */,
 				07249E1918DE95D5001C2F43 /* roboot_front.png */,
 				07249E1B18DE9799001C2F43 /* battery.png */,
@@ -381,8 +390,8 @@
 				07404D3618EC7DCC009C8D31 /* ButtonLeft.png in Resources */,
 				07249E3618DE97DA001C2F43 /* roboot_right.png in Resources */,
 				07249E3318DE97DA001C2F43 /* portal-open.png in Resources */,
-				F373FE3318FCB68D0079ACC5 /* level complete.png in Resources */,
-				F373FE3418FCB68D0079ACC5 /* fail screen.png in Resources */,
+				F373FE3318FCB68D0079ACC5 /* levelComplete.png in Resources */,
+				F373FE3418FCB68D0079ACC5 /* failScreen.png in Resources */,
 				070361EB18A86E16006AB301 /* InfoPlist.strings in Resources */,
 				F3A7566918FDE6F800402ACC /* level_1.txt in Resources */,
 				07249E3818DE97DA001C2F43 /* screen.png in Resources */,
@@ -408,7 +417,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				070361FD18A86E16006AB301 /* MyScene.m in Sources */,
+				F3DE4D1718FE3D2200AB8D94 /* WinScene.m in Sources */,
 				F3A2108418FB8BBD0004BB55 /* MapReader.m in Sources */,
+				F3A36F5318FE42EC00A89FFB /* LossScene.m in Sources */,
 				07404D3018EBC51F009C8D31 /* Map.m in Sources */,
 				070361FA18A86E16006AB301 /* ViewController.m in Sources */,
 				070361F118A86E16006AB301 /* AppDelegate.m in Sources */,
