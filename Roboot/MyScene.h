@@ -19,7 +19,9 @@
     bool moving;
     int direction;
     int speed;
-    NSMutableArray *commands;
+    int commands[1000];
+    int commandNum;
+    int currentCommand;
 }
 
 @property (nonatomic) AVAudioPlayer * backgroundMusicPlayer;
@@ -27,4 +29,7 @@
 @property (nonatomic) Map *map;
 @property (nonatomic) NSInteger width;
 @property (nonatomic) NSInteger height;
+
+-(void)runCommand:(int)action;
+
 @end

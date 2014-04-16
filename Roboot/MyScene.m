@@ -34,14 +34,16 @@
         roboot = [SKSpriteNode spriteNodeWithImageNamed:@"roboot_front.png"];
         
         roboot.position = CGPointMake(x * 60 + 35, y * 60 + 100);
-        roboot.name = @"roboot";//how the node is identified later
+        roboot.name = @"roboot"; //how the node is identified later
         roboot.zPosition = 1.0;
         
         tx = 1;
         ty = 1;
         speed = 2;
         
-        commands = [[NSMutableArray alloc] init];
+        
+        commandNum = 0;
+        currentCommand = 0;
     
         [self addChild:roboot];
 
@@ -62,7 +64,7 @@
             }
         }
         NSError *error;
-        NSURL * backgroundMusicURL = [[NSBundle mainBundle] URLForResource:@"song" withExtension:@"caf"];
+        NSURL * backgroundMusicURL = [[NSBundle mainBundle] URLForResource:@"song" withExtension:@"mp3"];
         self.backgroundMusicPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:backgroundMusicURL error:&error];
         self.backgroundMusicPlayer.numberOfLoops = -1;
         [self.backgroundMusicPlayer prepareToPlay];
@@ -114,36 +116,50 @@
     
     if ([node.name isEqualToString:@"leftNode"]) {
         NSLog(@"Left button pressed");
-//        tx--;
-        [commands addObject:@0];
-//        moving = true;
+        commands[commandNum++] = 0;
     }
     if ([node.name isEqualToString:@"rightNode"]) {
         NSLog(@"Right button pressed");
-//        tx++;
-        [commands addObject:@2];
-//        moving = true;
+        commands[commandNum++] = 2;
+
     }
     if ([node.name isEqualToString:@"upNode"]) {
         NSLog(@"Up button pressed");
-//        ty++;
-        [commands addObject:@1];
-//        moving = true;
+        commands[commandNum++] = 1;
     }
     if ([node.name isEqualToString:@"downNode"]) {
         NSLog(@"Down button pressed");
-//        ty--;
-        [commands addObject:@3];
-//        moving = true;
+        commands[commandNum++] = 3;
     }
     
     if ([node.name isEqualToString:@"acceptNode"]) {
         NSLog(@"Accept button pressed");
         
-        moving = true;
+        [self runCommand:commands[currentCommand++]];
     }
     NSLog(@"%d|%d", tx, ty);
     
+}
+
+-(void)runCommand:(int)command {
+    switch (command) {
+        case 0:
+            tx++;
+            moving = true;
+            break;
+        case 1:
+            ty++;
+            moving = true;
+            break;
+        case 2:
+            tx--;
+            moving = true;
+            break;
+        case 3:
+            ty --;
+            moving = true;
+            break;
+    }
 }
 
 -(void)update:(CFTimeInterval)currentTime {
@@ -172,6 +188,8 @@
         }
         
     }
+    
+    
     switch (direction) {
         case 0:
             
