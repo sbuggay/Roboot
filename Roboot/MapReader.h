@@ -11,6 +11,6 @@
 
 @interface MapReader : NSObject
 
-- (Map*)readFile:(NSString*)fileName;
++ (Map*)readFile:(NSString*)fileName;
 
 @end

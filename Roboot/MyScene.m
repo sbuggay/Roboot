@@ -7,6 +7,7 @@
 //
 
 #import "MyScene.h"
+#import "MapReader.h"
 
 
 @implementation MyScene
@@ -28,11 +29,20 @@
         
         [self addChild:myLabel];
         
+        
+        
         roboot = [SKSpriteNode spriteNodeWithImageNamed:@"roboot_front.png"];
         
         roboot.position = CGPointMake(x * 60 + 35, y * 60 + 100);
         roboot.name = @"roboot";//how the node is identified later
         roboot.zPosition = 1.0;
+        
+        tx = 1;
+        ty = 1;
+        speed = 2;
+        
+        commands = [[NSMutableArray alloc] init];
+    
         [self addChild:roboot];
 
         
@@ -85,6 +95,12 @@
         rightNode.name = @"rightNode";//how the node is identified later
         rightNode.zPosition = 1.0;
         [self addChild:rightNode];
+        
+        SKSpriteNode *acceptNode = [SKSpriteNode spriteNodeWithImageNamed:@"ButtonAccept.png"];
+        acceptNode.position = CGPointMake(225, 25);
+        acceptNode.name = @"acceptNode";//how the node is identified later
+        acceptNode.zPosition = 1.0;
+        [self addChild:acceptNode];
     }
     return self;
 }
@@ -98,26 +114,78 @@
     
     if ([node.name isEqualToString:@"leftNode"]) {
         NSLog(@"Left button pressed");
-        x--;
+//        tx--;
+        [commands addObject:@0];
+//        moving = true;
     }
     if ([node.name isEqualToString:@"rightNode"]) {
         NSLog(@"Right button pressed");
-        x++;
+//        tx++;
+        [commands addObject:@2];
+//        moving = true;
     }
     if ([node.name isEqualToString:@"upNode"]) {
         NSLog(@"Up button pressed");
-        y++;
+//        ty++;
+        [commands addObject:@1];
+//        moving = true;
     }
     if ([node.name isEqualToString:@"downNode"]) {
         NSLog(@"Down button pressed");
-        y--;
+//        ty--;
+        [commands addObject:@3];
+//        moving = true;
     }
+    
+    if ([node.name isEqualToString:@"acceptNode"]) {
+        NSLog(@"Accept button pressed");
+        
+        moving = true;
+    }
+    NSLog(@"%d|%d", tx, ty);
     
 }
 
 -(void)update:(CFTimeInterval)currentTime {
     /* Called before each frame is rendered */
-    [roboot setPosition:CGPointMake(x * 60 + 30, y * 60 + 100)];
+    if (moving) {
+        moving = false;
+        if (tx * 60 > x) {
+            x = x + speed;
+            moving = true;
+            direction = 1;
+        }
+        if (tx * 60 < x) {
+            x = x - speed;
+            moving = true;
+            direction = 3;
+        }
+        if (ty * 60 > y) {
+            y = y + speed;
+            moving = true;
+            direction = 0;
+        }
+        if (ty * 60 < y) {
+            y = y - speed;
+            moving = true;
+            direction = 2;
+        }
+        
+    }
+    switch (direction) {
+        case 0:
+            
+            break;
+        case 1:
+            break;
+        case 2:
+            break;
+        case 3:
+            break;
+    }
+    
+    
+    [roboot setPosition:CGPointMake(x, y)];
 }
 
 @end

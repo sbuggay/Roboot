@@ -15,6 +15,11 @@
 @interface MyScene : SKScene {
     SKNode *roboot;
     int x, y;
+    int tx, ty;
+    bool moving;
+    int direction;
+    int speed;
+    NSMutableArray *commands;
 }
 
 @property (nonatomic) AVAudioPlayer * backgroundMusicPlayer;
