@@ -22,6 +22,8 @@
     int commands[1000];
     int commandNum;
     int currentCommand;
+    
+    float background;
 }
 
 @property (nonatomic) AVAudioPlayer * backgroundMusicPlayer;

@@ -14,8 +14,9 @@
 + (Map*)readFile:(NSString*)fileName {
     
     NSError *error;
-    NSString * buffer = [NSString stringWithContentsOfFile:fileName
-                                                  encoding:NSASCIIStringEncoding
+    NSString *filepath = [[NSBundle mainBundle] pathForResource:fileName ofType:@"txt"];
+    NSString * buffer = [NSString stringWithContentsOfFile:filepath
+                                                  encoding:NSUTF8StringEncoding
                                                      error:&error];
     if (buffer == nil) NSLog (@"Error! %@", error);
     int pieces[100] = {0};
@@ -31,8 +32,8 @@
             x = 0;
         }
         else if (x == 9 && y == 9) break;
-        switch (pieces[x]) {
-            case 0:
+        switch (pieces[z]) {
+            case 'w':
                 // wall = w
                 [newMap set:'w' atX:x andY:y];
                 break;

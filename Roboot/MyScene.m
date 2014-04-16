@@ -22,18 +22,19 @@
         
         SKLabelNode *myLabel = [SKLabelNode labelNodeWithFontNamed:@"Chalkduster"];
         
-        myLabel.text = @"Roboot test!";
+        myLabel.text = @"Roboot Go!!!!!";
         myLabel.fontSize = 30;
         myLabel.position = CGPointMake(CGRectGetMidX(self.frame),
-                                       CGRectGetHeight(self.frame) - 30);
+                                       CGRectGetHeight(self.frame) - 50);
         
         [self addChild:myLabel];
         
         
         
         roboot = [SKSpriteNode spriteNodeWithImageNamed:@"roboot_front.png"];
-        
-        roboot.position = CGPointMake(x * 60 + 35, y * 60 + 100);
+        x = 16;
+        y = 150;
+        roboot.position = CGPointMake(16, 150);
         roboot.name = @"roboot"; //how the node is identified later
         roboot.zPosition = 1.0;
         
@@ -49,14 +50,17 @@
 
         
         
-        map = [[Map alloc] initWithWidth:5 andHeight:7];
+        map = [MapReader readFile:@"level_1"];
+        [map printCoordinates];
         
         
-        for (int i = 0; i < 5; i++) {
-            for (int j = 0; j < 7; j++) {
+        for (int i = 0; i < 10; i++) {
+            for (int j = 0; j < 10; j++) {
+                NSLog(@"%d", [map getValueAtX:i andY:j]);
+                
                 SKSpriteNode *sprite = [SKSpriteNode spriteNodeWithImageNamed:@"tile"];
                 
-                CGPoint point = {i * 60 + 35, j * 60 + 100};
+                CGPoint point = {i * 32 + 16, j * 32 + 150};
                 sprite.position = point;
                 
                 
@@ -166,22 +170,22 @@
     /* Called before each frame is rendered */
     if (moving) {
         moving = false;
-        if (tx * 60 > x) {
+        if (tx * 32 + 16 > x) {
             x = x + speed;
             moving = true;
             direction = 1;
         }
-        if (tx * 60 < x) {
+        if (tx * 32 + 16 < x) {
             x = x - speed;
             moving = true;
             direction = 3;
         }
-        if (ty * 60 > y) {
+        if (ty * 32 + 150> y) {
             y = y + speed;
             moving = true;
             direction = 0;
         }
-        if (ty * 60 < y) {
+        if (ty * 32 + 150< y) {
             y = y - speed;
             moving = true;
             direction = 2;
@@ -204,6 +208,10 @@
     
     
     [roboot setPosition:CGPointMake(x, y)];
+
+    self.backgroundColor = [SKColor colorWithRed:sin(background * 2) green:cos(background) blue:(sin(background + cos(background * 2)) / 2) alpha:1];
+    
+    background += .001;
 }
 
 @end
