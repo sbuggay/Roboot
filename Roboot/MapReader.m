@@ -19,14 +19,21 @@
                                                   encoding:NSUTF8StringEncoding
                                                      error:&error];
     if (buffer == nil) NSLog (@"Error! %@", error);
-    int pieces[100] = {0};
-    for (int i=0; i < 100; i++) {
-        NSString *ichar  = [NSString stringWithFormat:@"%c", [buffer characterAtIndex:i]];
-        if ([ichar isEqualToString:@"\n"]) continue;
-        pieces[i] = (int)[ichar integerValue];
+    char pieces[110] = {0};
+    char *ichar  = NULL;
+    for (int i=0, j = 0; i < 110; i++) {
+        ichar  = [buffer characterAtIndex:i];
+        if (ichar == '\n') {
+            continue;
+        }
+        pieces[j] = ichar;
+        j++;
     }
     Map * newMap = [[Map alloc] initWithWidth:10 andHeight:10];
-    for (int x = 0, y = 0, z = 0; z < 100; x++, z++) {
+    for (int x = 0, y = 0, z = 0; z < 110; x++, z++) {
+        if (pieces[z] == '\n') {
+            
+        }
         if (x % 9 == 0 && x > 1 && y != 9) {
             y++;
             x = 0;
