@@ -56,8 +56,8 @@
                     [newMap set:'b' atX:x andY:y];
                     break;
                 case 'e':
-                    // wrench = w
-                    [newMap set:'w' atX:x andY:y];
+                    // wrench = e
+                    [newMap set:'e' atX:x andY:y];
                     break;
                 case 'c':
                     // cracked tile = c
