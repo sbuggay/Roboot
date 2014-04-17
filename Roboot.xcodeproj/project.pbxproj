@@ -80,6 +80,10 @@
 		F3CF173A1900843700CF7875 /* robootMoving.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F3CF17351900843700CF7875 /* robootMoving.mp3 */; };
 		F3CF173B1900843700CF7875 /* endMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F3CF17361900843700CF7875 /* endMusic.mp3 */; };
 		F3CF173C1900843700CF7875 /* getWrench.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F3CF17371900843700CF7875 /* getWrench.mp3 */; };
+		F3CF174119008C5800CF7875 /* buttonThree.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F3CF173D19008C5800CF7875 /* buttonThree.mp3 */; };
+		F3CF174219008C5800CF7875 /* buttonOne.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F3CF173E19008C5800CF7875 /* buttonOne.mp3 */; };
+		F3CF174319008C5800CF7875 /* buttonFour.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F3CF173F19008C5800CF7875 /* buttonFour.mp3 */; };
+		F3CF174419008C5800CF7875 /* buttonTwo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F3CF174019008C5800CF7875 /* buttonTwo.mp3 */; };
 		F3DE4D1718FE3D2200AB8D94 /* WinScene.m in Sources */ = {isa = PBXBuildFile; fileRef = F3DE4D1618FE3D2200AB8D94 /* WinScene.m */; };
 /* End PBXBuildFile section */
 
@@ -178,6 +182,10 @@
 		F3CF17351900843700CF7875 /* robootMoving.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = robootMoving.mp3; sourceTree = "<group>"; };
 		F3CF17361900843700CF7875 /* endMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = endMusic.mp3; sourceTree = "<group>"; };
 		F3CF17371900843700CF7875 /* getWrench.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = getWrench.mp3; sourceTree = "<group>"; };
+		F3CF173D19008C5800CF7875 /* buttonThree.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = buttonThree.mp3; sourceTree = "<group>"; };
+		F3CF173E19008C5800CF7875 /* buttonOne.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = buttonOne.mp3; sourceTree = "<group>"; };
+		F3CF173F19008C5800CF7875 /* buttonFour.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = buttonFour.mp3; sourceTree = "<group>"; };
+		F3CF174019008C5800CF7875 /* buttonTwo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = buttonTwo.mp3; sourceTree = "<group>"; };
 		F3DE4D1518FE3D2200AB8D94 /* WinScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WinScene.h; sourceTree = "<group>"; };
 		F3DE4D1618FE3D2200AB8D94 /* WinScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WinScene.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -255,6 +263,10 @@
 				F373FE3118FCB68D0079ACC5 /* failScreen.png */,
 				F38C64CD1900298600F676DF /* ButtonAccept.png */,
 				F38C64D9190029EF00F676DF /* abyss.png */,
+				F3CF173D19008C5800CF7875 /* buttonThree.mp3 */,
+				F3CF173E19008C5800CF7875 /* buttonOne.mp3 */,
+				F3CF173F19008C5800CF7875 /* buttonFour.mp3 */,
+				F3CF174019008C5800CF7875 /* buttonTwo.mp3 */,
 				F3CF17331900843700CF7875 /* nextLevel.mp3 */,
 				F3CF17341900843700CF7875 /* portalOpening.mp3 */,
 				F3CF17351900843700CF7875 /* robootMoving.mp3 */,
@@ -457,6 +469,7 @@
 				F3CF17381900843700CF7875 /* nextLevel.mp3 in Resources */,
 				F38C64D8190029EA00F676DF /* block.png in Resources */,
 				F38C64CE1900298600F676DF /* ButtonAccept.png in Resources */,
+				F3CF174419008C5800CF7875 /* buttonTwo.mp3 in Resources */,
 				070361F718A86E16006AB301 /* Main_iPad.storyboard in Resources */,
 				F3CF173C1900843700CF7875 /* getWrench.mp3 in Resources */,
 				07404D3718EC7DCC009C8D31 /* ButtonRight.png in Resources */,
@@ -468,9 +481,11 @@
 				07249E3118DE97DA001C2F43 /* mine.png in Resources */,
 				07249E3718DE97DA001C2F43 /* robot.png in Resources */,
 				F3A7566A18FDE6F800402ACC /* level_2.txt in Resources */,
+				F3CF174119008C5800CF7875 /* buttonThree.mp3 in Resources */,
 				F38C64D6190029E600F676DF /* ButtonUp.png in Resources */,
 				07249E1A18DE95D5001C2F43 /* roboot_front.png in Resources */,
 				07404D3618EC7DCC009C8D31 /* ButtonLeft.png in Resources */,
+				F3CF174219008C5800CF7875 /* buttonOne.mp3 in Resources */,
 				07249E3618DE97DA001C2F43 /* roboot_right.png in Resources */,
 				07249E3318DE97DA001C2F43 /* portal-open.png in Resources */,
 				F38C64EA19002A1A00F676DF /* start.png in Resources */,
@@ -487,6 +502,7 @@
 				07249E3818DE97DA001C2F43 /* screen.png in Resources */,
 				07249E2318DE9799001C2F43 /* circuit.png in Resources */,
 				F38C64E119002A0000F676DF /* portal-closed.png in Resources */,
+				F3CF174319008C5800CF7875 /* buttonFour.mp3 in Resources */,
 				07249E3A18DE97DA001C2F43 /* tile.png in Resources */,
 				07404D3818EC7DCC009C8D31 /* ButtonUp.png in Resources */,
 				F38C64EE19002A2800F676DF /* wall.png in Resources */,
