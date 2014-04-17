@@ -10,6 +10,7 @@
 
 @implementation Map
 
+@synthesize items;
 @synthesize map;
 
 - (id)init
@@ -23,6 +24,8 @@
     _height = height;
     self = [super init];
     if(self) {
+        items = [[NSMutableArray alloc] init];
+        
         map = [NSMutableArray arrayWithCapacity: (_width*_height)];
         
         for(int i=0; i < (_width*_height); i++) [map addObject: @0];
@@ -55,27 +58,8 @@
     else return 0;
 }
 
-- (void)printCoordinates {
-    for (int y = 9; y >= 0; y--) {
-        for (int x = 0; x < 9; x++) {
-            printf("%d", [self getValueAtX:x andY:y]);
-            if (x % 8 == 0 && x > 1) {
-                printf("\n");
-            }
-        }
-    }
+- (void)addItem:(int)item {
+    [items addObject:@(item)];
 }
 
 @end
-
-/*
- Tiles       8
- Fall tiles	7
- wrenches	6
- battery     5
- pushblock	4
- start       3
- finish      2
- abyss       1
- wall        0
- */

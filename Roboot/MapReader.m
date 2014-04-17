@@ -25,7 +25,7 @@
     NSMutableArray *rows = [[buffer componentsSeparatedByCharactersInSet: [NSCharacterSet newlineCharacterSet]] mutableCopy];
     
     int x = 0;
-    int y = 0;
+    int y = 9;
     for (NSString *row in rows) {
         x = 0;
         NSLog(@"%@", row);
@@ -72,7 +72,7 @@
             }
             x++;
         }
-        y++;
+        y--;
     }
     return newMap;
 }

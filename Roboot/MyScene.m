@@ -34,12 +34,10 @@
         roboot = [SKSpriteNode spriteNodeWithImageNamed:@"roboot_front.png"];
         x = 16;
         y = 150;
-        roboot.position = CGPointMake(16, 150);
+        
         roboot.name = @"roboot"; //how the node is identified later
         roboot.zPosition = 1.0;
         
-        tx = 1;
-        ty = 1;
         speed = 2;
         
         
@@ -48,25 +46,25 @@
         
         runningCommands = false;
     
-        [self addChild:roboot];
+        
 
         
         
         map = [MapReader readFile:@"level_1"];
-        [map printCoordinates];
         
         
         for (int i = 0; i < 10; i++) {
             for (int j = 0; j < 10; j++) {
-                NSLog(@"%d", [map getValueAtX:i andY:j]);
                 
+                CGPoint point = {i * 32 + 16, j * 32 + 150};
                 SKSpriteNode *sprite;
+                SKSpriteNode *item;
                 switch ([map getValueAtX:i andY:j]) {
                     case 'w':
                         sprite = [SKSpriteNode spriteNodeWithImageNamed:@"wall"];
                         break;
                     case 'a':
-                        
+                        sprite = [SKSpriteNode spriteNodeWithImageNamed:@"abyss"];
                         break;
                     case 'f':
                         sprite = [SKSpriteNode spriteNodeWithImageNamed:@"portal-closed"];
@@ -75,6 +73,8 @@
                         sprite = [SKSpriteNode spriteNodeWithImageNamed:@"tile"];
                         tx = i;
                         ty = j;
+                        x = tx * 32 + 16;
+                        y = ty * 32 + 150;
                         break;
                     case 'p':
                         sprite = [SKSpriteNode spriteNodeWithImageNamed:@"tile"];
@@ -84,6 +84,10 @@
                         break;
                     case 'e':
                         sprite = [SKSpriteNode spriteNodeWithImageNamed:@"tile"];
+                        item = [SKSpriteNode spriteNodeWithImageNamed:@"wrench"];
+                        item.position = point;
+                        item.zPosition = 1.0;
+                        [self addChild:item];
                         break;
                     case 'c':
                         sprite = [SKSpriteNode spriteNodeWithImageNamed:@"fall"];
@@ -94,19 +98,24 @@
                     default:
                         break;
                 }
-                CGPoint point = {i * 32 + 16, j * 32 + 150};
+                
                 sprite.position = point;
                 
                 
                 [self addChild:sprite];
             }
         }
+        
+        roboot.position = CGPointMake(x, y);
+        
+        [self addChild:roboot];
         NSError *error;
         NSURL * backgroundMusicURL = [[NSBundle mainBundle] URLForResource:@"song" withExtension:@"mp3"];
         self.backgroundMusicPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:backgroundMusicURL error:&error];
         self.backgroundMusicPlayer.numberOfLoops = -1;
         [self.backgroundMusicPlayer prepareToPlay];
         [self.backgroundMusicPlayer play];
+        
         
         
         
@@ -204,12 +213,13 @@
 -(void)update:(CFTimeInterval)currentTime {
     /* Called before each frame is rendered */
     if (runningCommands) {
-        if (moving == false) {
+        if (currentCommand >= commandNum) {
+            runningCommands = false;
+        }
+        else if (moving == false) {
             [self runCommand:commands[currentCommand++]];
         }
-        
-        if (currentCommand > commandNum)
-            runningCommands = false;
+    
     }
     
     if (moving) {
@@ -236,6 +246,8 @@
         }
         
     }
+    
+    roboot.texture = [SKTexture textureWithImageNamed:@"roboot_left"];
     
     //render block
     switch (direction) {

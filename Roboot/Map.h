@@ -10,12 +10,13 @@
 
 @interface Map : NSObject
 @property (nonatomic) NSMutableArray *map;
+@property (nonatomic) NSMutableArray *items;
 @property (nonatomic) NSInteger width;
 @property (nonatomic) NSInteger height;
 
 - (id)initWithWidth:(int)width andHeight:(int)height;
 - (int)getValueAtX:(int)x andY:(int)y;
 - (void)set:(int)value atX:(int)x andY:(int)y;
-- (void)printCoordinates;
 
+- (void)addItem:(int)item;
 @end
