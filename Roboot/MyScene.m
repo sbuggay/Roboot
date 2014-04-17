@@ -247,7 +247,6 @@
         
     }
     
-    roboot.texture = [SKTexture textureWithImageNamed:@"roboot_left"];
     
     //render block
     switch (direction) {
