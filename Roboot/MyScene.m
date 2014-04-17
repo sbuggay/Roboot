@@ -60,8 +60,40 @@
             for (int j = 0; j < 10; j++) {
                 NSLog(@"%d", [map getValueAtX:i andY:j]);
                 
-                SKSpriteNode *sprite = [SKSpriteNode spriteNodeWithImageNamed:@"tile"];
-                
+                SKSpriteNode *sprite;
+                switch ([map getValueAtX:i andY:j]) {
+                    case 'w':
+                        sprite = [SKSpriteNode spriteNodeWithImageNamed:@"wall"];
+                        break;
+                    case 'a':
+                        
+                        break;
+                    case 'f':
+                        sprite = [SKSpriteNode spriteNodeWithImageNamed:@"portal-closed"];
+                        break;
+                    case 's':
+                        sprite = [SKSpriteNode spriteNodeWithImageNamed:@"tile"];
+                        tx = i;
+                        ty = j;
+                        break;
+                    case 'p':
+                        sprite = [SKSpriteNode spriteNodeWithImageNamed:@"tile"];
+                        break;
+                    case 'b':
+                        sprite = [SKSpriteNode spriteNodeWithImageNamed:@"tile"];
+                        break;
+                    case 'e':
+                        sprite = [SKSpriteNode spriteNodeWithImageNamed:@"tile"];
+                        break;
+                    case 'c':
+                        sprite = [SKSpriteNode spriteNodeWithImageNamed:@"fall"];
+                        break;
+                    case 't':
+                        sprite = [SKSpriteNode spriteNodeWithImageNamed:@"tile"];
+                        break;
+                    default:
+                        break;
+                }
                 CGPoint point = {i * 32 + 16, j * 32 + 150};
                 sprite.position = point;
                 
