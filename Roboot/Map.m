@@ -67,15 +67,3 @@
 }
 
 @end
-
-/*
- Tiles       8
- Fall tiles	7
- wrenches	6
- battery     5
- pushblock	4
- start       3
- finish      2
- abyss       1
- wall        0
- */
