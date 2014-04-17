@@ -23,6 +23,8 @@
     int commandNum;
     int currentCommand;
     
+    bool runningCommands;
+    
     float background;
 }
 

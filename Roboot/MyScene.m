@@ -45,6 +45,8 @@
         
         commandNum = 0;
         currentCommand = 0;
+        
+        runningCommands = false;
     
         [self addChild:roboot];
 
@@ -120,11 +122,11 @@
     
     if ([node.name isEqualToString:@"leftNode"]) {
         NSLog(@"Left button pressed");
-        commands[commandNum++] = 0;
+        commands[commandNum++] = 2;
     }
     if ([node.name isEqualToString:@"rightNode"]) {
         NSLog(@"Right button pressed");
-        commands[commandNum++] = 2;
+        commands[commandNum++] = 0;
 
     }
     if ([node.name isEqualToString:@"upNode"]) {
@@ -139,13 +141,14 @@
     if ([node.name isEqualToString:@"acceptNode"]) {
         NSLog(@"Accept button pressed");
         
-        [self runCommand:commands[currentCommand++]];
+        runningCommands = true;
     }
     NSLog(@"%d|%d", tx, ty);
     
 }
 
 -(void)runCommand:(int)command {
+    NSLog(@"Running command: %d", command);
     switch (command) {
         case 0:
             tx++;
@@ -168,6 +171,15 @@
 
 -(void)update:(CFTimeInterval)currentTime {
     /* Called before each frame is rendered */
+    if (runningCommands) {
+        if (moving == false) {
+            [self runCommand:commands[currentCommand++]];
+        }
+        
+        if (currentCommand > commandNum)
+            runningCommands = false;
+    }
+    
     if (moving) {
         moving = false;
         if (tx * 32 + 16 > x) {
@@ -193,7 +205,7 @@
         
     }
     
-    
+    //render block
     switch (direction) {
         case 0:
             
