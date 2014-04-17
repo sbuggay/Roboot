@@ -18,58 +18,41 @@
 		070361F718A86E16006AB301 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 070361F518A86E16006AB301 /* Main_iPad.storyboard */; };
 		070361FA18A86E16006AB301 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 070361F918A86E16006AB301 /* ViewController.m */; };
 		070361FD18A86E16006AB301 /* MyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 070361FC18A86E16006AB301 /* MyScene.m */; };
-		070361FF18A86E16006AB301 /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = 070361FE18A86E16006AB301 /* Spaceship.png */; };
 		0703620118A86E16006AB301 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0703620018A86E16006AB301 /* Images.xcassets */; };
 		0703620818A86E16006AB301 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0703620718A86E16006AB301 /* XCTest.framework */; };
 		0703620918A86E16006AB301 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 070361DE18A86E16006AB301 /* Foundation.framework */; };
 		0703620A18A86E16006AB301 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 070361E218A86E16006AB301 /* UIKit.framework */; };
 		0703621218A86E16006AB301 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0703621018A86E16006AB301 /* InfoPlist.strings */; };
 		0703621418A86E16006AB301 /* RobootTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0703621318A86E16006AB301 /* RobootTests.m */; };
-		07249E1A18DE95D5001C2F43 /* roboot_front.png in Resources */ = {isa = PBXBuildFile; fileRef = 07249E1918DE95D5001C2F43 /* roboot_front.png */; };
 		07249E2018DE9799001C2F43 /* battery.png in Resources */ = {isa = PBXBuildFile; fileRef = 07249E1B18DE9799001C2F43 /* battery.png */; };
 		07249E2218DE9799001C2F43 /* block.png in Resources */ = {isa = PBXBuildFile; fileRef = 07249E1D18DE9799001C2F43 /* block.png */; };
 		07249E2318DE9799001C2F43 /* circuit.png in Resources */ = {isa = PBXBuildFile; fileRef = 07249E1E18DE9799001C2F43 /* circuit.png */; };
 		07249E2418DE9799001C2F43 /* fall.png in Resources */ = {isa = PBXBuildFile; fileRef = 07249E1F18DE9799001C2F43 /* fall.png */; };
 		07249E3118DE97DA001C2F43 /* mine.png in Resources */ = {isa = PBXBuildFile; fileRef = 07249E2518DE97DA001C2F43 /* mine.png */; };
-		07249E3218DE97DA001C2F43 /* portal-closed.png in Resources */ = {isa = PBXBuildFile; fileRef = 07249E2618DE97DA001C2F43 /* portal-closed.png */; };
-		07249E3318DE97DA001C2F43 /* portal-open.png in Resources */ = {isa = PBXBuildFile; fileRef = 07249E2718DE97DA001C2F43 /* portal-open.png */; };
 		07249E3418DE97DA001C2F43 /* roboot_back.png in Resources */ = {isa = PBXBuildFile; fileRef = 07249E2818DE97DA001C2F43 /* roboot_back.png */; };
-		07249E3518DE97DA001C2F43 /* roboot_left.png in Resources */ = {isa = PBXBuildFile; fileRef = 07249E2918DE97DA001C2F43 /* roboot_left.png */; };
 		07249E3618DE97DA001C2F43 /* roboot_right.png in Resources */ = {isa = PBXBuildFile; fileRef = 07249E2A18DE97DA001C2F43 /* roboot_right.png */; };
 		07249E3718DE97DA001C2F43 /* robot.png in Resources */ = {isa = PBXBuildFile; fileRef = 07249E2B18DE97DA001C2F43 /* robot.png */; };
 		07249E3818DE97DA001C2F43 /* screen.png in Resources */ = {isa = PBXBuildFile; fileRef = 07249E2C18DE97DA001C2F43 /* screen.png */; };
 		07249E3918DE97DA001C2F43 /* song.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 07249E2D18DE97DA001C2F43 /* song.mp3 */; };
-		07249E3A18DE97DA001C2F43 /* tile.png in Resources */ = {isa = PBXBuildFile; fileRef = 07249E2E18DE97DA001C2F43 /* tile.png */; };
 		07249E3B18DE97DA001C2F43 /* wall.png in Resources */ = {isa = PBXBuildFile; fileRef = 07249E2F18DE97DA001C2F43 /* wall.png */; };
 		07249E3C18DE97DA001C2F43 /* wrench.png in Resources */ = {isa = PBXBuildFile; fileRef = 07249E3018DE97DA001C2F43 /* wrench.png */; };
 		07249E3E18DE98F7001C2F43 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07249E3D18DE98F6001C2F43 /* AVFoundation.framework */; };
 		07404D3018EBC51F009C8D31 /* Map.m in Sources */ = {isa = PBXBuildFile; fileRef = 07404D2F18EBC51F009C8D31 /* Map.m */; };
-		07404D3518EC7DCC009C8D31 /* ButtonDown.png in Resources */ = {isa = PBXBuildFile; fileRef = 07404D3118EC7DCC009C8D31 /* ButtonDown.png */; };
 		07404D3618EC7DCC009C8D31 /* ButtonLeft.png in Resources */ = {isa = PBXBuildFile; fileRef = 07404D3218EC7DCC009C8D31 /* ButtonLeft.png */; };
 		07404D3718EC7DCC009C8D31 /* ButtonRight.png in Resources */ = {isa = PBXBuildFile; fileRef = 07404D3318EC7DCC009C8D31 /* ButtonRight.png */; };
-		07404D3818EC7DCC009C8D31 /* ButtonUp.png in Resources */ = {isa = PBXBuildFile; fileRef = 07404D3418EC7DCC009C8D31 /* ButtonUp.png */; };
 		07A2993F18FCB82200038483 /* StartScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A2993E18FCB82200038483 /* StartScene.m */; };
-		F373FE3218FCB68D0079ACC5 /* start.png in Resources */ = {isa = PBXBuildFile; fileRef = F373FE2F18FCB68D0079ACC5 /* start.png */; };
 		F373FE3318FCB68D0079ACC5 /* levelComplete.png in Resources */ = {isa = PBXBuildFile; fileRef = F373FE3018FCB68D0079ACC5 /* levelComplete.png */; };
 		F373FE3418FCB68D0079ACC5 /* failScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = F373FE3118FCB68D0079ACC5 /* failScreen.png */; };
 		F38C64CE1900298600F676DF /* ButtonAccept.png in Resources */ = {isa = PBXBuildFile; fileRef = F38C64CD1900298600F676DF /* ButtonAccept.png */; };
 		F38C64D3190029E600F676DF /* ButtonDown.png in Resources */ = {isa = PBXBuildFile; fileRef = F38C64CF190029E600F676DF /* ButtonDown.png */; };
-		F38C64D4190029E600F676DF /* ButtonLeft.png in Resources */ = {isa = PBXBuildFile; fileRef = F38C64D0190029E600F676DF /* ButtonLeft.png */; };
-		F38C64D5190029E600F676DF /* ButtonRight.png in Resources */ = {isa = PBXBuildFile; fileRef = F38C64D1190029E600F676DF /* ButtonRight.png */; };
 		F38C64D6190029E600F676DF /* ButtonUp.png in Resources */ = {isa = PBXBuildFile; fileRef = F38C64D2190029E600F676DF /* ButtonUp.png */; };
-		F38C64D8190029EA00F676DF /* block.png in Resources */ = {isa = PBXBuildFile; fileRef = F38C64D7190029EA00F676DF /* block.png */; };
 		F38C64DA190029EF00F676DF /* abyss.png in Resources */ = {isa = PBXBuildFile; fileRef = F38C64D9190029EF00F676DF /* abyss.png */; };
 		F38C64E119002A0000F676DF /* portal-closed.png in Resources */ = {isa = PBXBuildFile; fileRef = F38C64DB19002A0000F676DF /* portal-closed.png */; };
 		F38C64E219002A0000F676DF /* portal-open.png in Resources */ = {isa = PBXBuildFile; fileRef = F38C64DC19002A0000F676DF /* portal-open.png */; };
-		F38C64E319002A0000F676DF /* roboot_back.png in Resources */ = {isa = PBXBuildFile; fileRef = F38C64DD19002A0000F676DF /* roboot_back.png */; };
 		F38C64E419002A0000F676DF /* roboot_front.png in Resources */ = {isa = PBXBuildFile; fileRef = F38C64DE19002A0000F676DF /* roboot_front.png */; };
 		F38C64E519002A0000F676DF /* roboot_left.png in Resources */ = {isa = PBXBuildFile; fileRef = F38C64DF19002A0000F676DF /* roboot_left.png */; };
-		F38C64E619002A0000F676DF /* roboot_right.png in Resources */ = {isa = PBXBuildFile; fileRef = F38C64E019002A0000F676DF /* roboot_right.png */; };
-		F38C64E819002A1300F676DF /* song.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F38C64E719002A1300F676DF /* song.mp3 */; };
 		F38C64EA19002A1A00F676DF /* start.png in Resources */ = {isa = PBXBuildFile; fileRef = F38C64E919002A1A00F676DF /* start.png */; };
 		F38C64EC19002A2200F676DF /* tile.png in Resources */ = {isa = PBXBuildFile; fileRef = F38C64EB19002A2200F676DF /* tile.png */; };
-		F38C64EE19002A2800F676DF /* wall.png in Resources */ = {isa = PBXBuildFile; fileRef = F38C64ED19002A2800F676DF /* wall.png */; };
-		F38C64F019002A2D00F676DF /* wrench.png in Resources */ = {isa = PBXBuildFile; fileRef = F38C64EF19002A2D00F676DF /* wrench.png */; };
 		F3A2108418FB8BBD0004BB55 /* MapReader.m in Sources */ = {isa = PBXBuildFile; fileRef = F3A2108318FB8BBD0004BB55 /* MapReader.m */; };
 		F3A36F5318FE42EC00A89FFB /* LossScene.m in Sources */ = {isa = PBXBuildFile; fileRef = F3A36F5218FE42EC00A89FFB /* LossScene.m */; };
 		F3A7566918FDE6F800402ACC /* level_1.txt in Resources */ = {isa = PBXBuildFile; fileRef = F3A7566618FDE6F800402ACC /* level_1.txt */; };
@@ -454,47 +437,33 @@
 				07249E3C18DE97DA001C2F43 /* wrench.png in Resources */,
 				07249E3918DE97DA001C2F43 /* song.mp3 in Resources */,
 				F3A7566B18FDE6F800402ACC /* level_3.txt in Resources */,
-				07249E3518DE97DA001C2F43 /* roboot_left.png in Resources */,
 				F38C64E219002A0000F676DF /* portal-open.png in Resources */,
 				07249E3418DE97DA001C2F43 /* roboot_back.png in Resources */,
 				07249E2418DE9799001C2F43 /* fall.png in Resources */,
-				F373FE3218FCB68D0079ACC5 /* start.png in Resources */,
 				07249E3B18DE97DA001C2F43 /* wall.png in Resources */,
-				070361FF18A86E16006AB301 /* Spaceship.png in Resources */,
 				F3CF17391900843700CF7875 /* portalOpening.mp3 in Resources */,
 				07249E2218DE9799001C2F43 /* block.png in Resources */,
-				F38C64E319002A0000F676DF /* roboot_back.png in Resources */,
 				0703620118A86E16006AB301 /* Images.xcassets in Resources */,
 				F38C64E419002A0000F676DF /* roboot_front.png in Resources */,
 				F3CF17381900843700CF7875 /* nextLevel.mp3 in Resources */,
-				F38C64D8190029EA00F676DF /* block.png in Resources */,
 				F38C64CE1900298600F676DF /* ButtonAccept.png in Resources */,
 				F3CF174419008C5800CF7875 /* buttonTwo.mp3 in Resources */,
 				070361F718A86E16006AB301 /* Main_iPad.storyboard in Resources */,
 				F3CF173C1900843700CF7875 /* getWrench.mp3 in Resources */,
 				07404D3718EC7DCC009C8D31 /* ButtonRight.png in Resources */,
-				F38C64D5190029E600F676DF /* ButtonRight.png in Resources */,
 				070361F418A86E16006AB301 /* Main_iPhone.storyboard in Resources */,
-				07404D3518EC7DCC009C8D31 /* ButtonDown.png in Resources */,
 				F38C64DA190029EF00F676DF /* abyss.png in Resources */,
-				07249E3218DE97DA001C2F43 /* portal-closed.png in Resources */,
 				07249E3118DE97DA001C2F43 /* mine.png in Resources */,
 				07249E3718DE97DA001C2F43 /* robot.png in Resources */,
 				F3A7566A18FDE6F800402ACC /* level_2.txt in Resources */,
 				F3CF174119008C5800CF7875 /* buttonThree.mp3 in Resources */,
 				F38C64D6190029E600F676DF /* ButtonUp.png in Resources */,
-				07249E1A18DE95D5001C2F43 /* roboot_front.png in Resources */,
 				07404D3618EC7DCC009C8D31 /* ButtonLeft.png in Resources */,
 				F3CF174219008C5800CF7875 /* buttonOne.mp3 in Resources */,
 				07249E3618DE97DA001C2F43 /* roboot_right.png in Resources */,
-				07249E3318DE97DA001C2F43 /* portal-open.png in Resources */,
 				F38C64EA19002A1A00F676DF /* start.png in Resources */,
 				F373FE3318FCB68D0079ACC5 /* levelComplete.png in Resources */,
-				F38C64F019002A2D00F676DF /* wrench.png in Resources */,
-				F38C64E819002A1300F676DF /* song.mp3 in Resources */,
-				F38C64E619002A0000F676DF /* roboot_right.png in Resources */,
 				F373FE3418FCB68D0079ACC5 /* failScreen.png in Resources */,
-				F38C64D4190029E600F676DF /* ButtonLeft.png in Resources */,
 				F3CF173A1900843700CF7875 /* robootMoving.mp3 in Resources */,
 				070361EB18A86E16006AB301 /* InfoPlist.strings in Resources */,
 				F38C64EC19002A2200F676DF /* tile.png in Resources */,
@@ -503,9 +472,6 @@
 				07249E2318DE9799001C2F43 /* circuit.png in Resources */,
 				F38C64E119002A0000F676DF /* portal-closed.png in Resources */,
 				F3CF174319008C5800CF7875 /* buttonFour.mp3 in Resources */,
-				07249E3A18DE97DA001C2F43 /* tile.png in Resources */,
-				07404D3818EC7DCC009C8D31 /* ButtonUp.png in Resources */,
-				F38C64EE19002A2800F676DF /* wall.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

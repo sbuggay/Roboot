@@ -198,7 +198,10 @@
     
     if ([node.name isEqualToString:@"acceptNode"]) {
         NSLog(@"Accept button pressed");
-        
+        soundEffectsURL = [[NSBundle mainBundle] URLForResource:@"robootMoving" withExtension:@"mp3"];
+        self.soundEffectsPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:soundEffectsURL error:&error];
+        [self.soundEffectsPlayer prepareToPlay];
+        [self.soundEffectsPlayer play];
         runningCommands = true;
     }
     NSLog(@"%d|%d", tx, ty);
