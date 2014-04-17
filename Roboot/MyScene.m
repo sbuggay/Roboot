@@ -22,7 +22,7 @@
         
         SKLabelNode *myLabel = [SKLabelNode labelNodeWithFontNamed:@"Chalkduster"];
         
-        myLabel.text = @"Roboot Go!!!!!";
+        myLabel.text = @"Roboot yes!!!!!";
         myLabel.fontSize = 30;
         myLabel.position = CGPointMake(CGRectGetMidX(self.frame),
                                        CGRectGetHeight(self.frame) - 50);
@@ -160,23 +160,40 @@
     UITouch *touch = [touches anyObject];
     CGPoint location = [touch locationInNode:self];
     SKNode *node = [self nodeAtPoint:location];
+    NSError *error;
+    NSURL * soundEffectsURL;
     
     if ([node.name isEqualToString:@"leftNode"]) {
         NSLog(@"Left button pressed");
         commands[commandNum++] = 2;
+        soundEffectsURL = [[NSBundle mainBundle] URLForResource:@"buttonOne" withExtension:@"mp3"];
+        self.soundEffectsPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:soundEffectsURL error:&error];
+        [self.soundEffectsPlayer prepareToPlay];
+        [self.soundEffectsPlayer play];
     }
     if ([node.name isEqualToString:@"rightNode"]) {
         NSLog(@"Right button pressed");
         commands[commandNum++] = 0;
-
+        soundEffectsURL = [[NSBundle mainBundle] URLForResource:@"buttonTwo" withExtension:@"mp3"];
+        self.soundEffectsPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:soundEffectsURL error:&error];
+        [self.soundEffectsPlayer prepareToPlay];
+        [self.soundEffectsPlayer play];
     }
     if ([node.name isEqualToString:@"upNode"]) {
         NSLog(@"Up button pressed");
         commands[commandNum++] = 1;
+        soundEffectsURL = [[NSBundle mainBundle] URLForResource:@"buttonThree" withExtension:@"mp3"];
+        self.soundEffectsPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:soundEffectsURL error:&error];
+        [self.soundEffectsPlayer prepareToPlay];
+        [self.soundEffectsPlayer play];
     }
     if ([node.name isEqualToString:@"downNode"]) {
         NSLog(@"Down button pressed");
         commands[commandNum++] = 3;
+        soundEffectsURL = [[NSBundle mainBundle] URLForResource:@"buttonFour" withExtension:@"mp3"];
+        self.soundEffectsPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:soundEffectsURL error:&error];
+        [self.soundEffectsPlayer prepareToPlay];
+        [self.soundEffectsPlayer play];
     }
     
     if ([node.name isEqualToString:@"acceptNode"]) {
@@ -247,7 +264,7 @@
         
     }
     
-    roboot.texture = [SKTexture textureWithImageNamed:@"roboot_left"];
+//    roboot.texture = [SKTexture textureWithImageNamed:@"roboot_left"];
     
     //render block
     switch (direction) {

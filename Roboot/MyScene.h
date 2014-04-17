@@ -29,6 +29,7 @@
 }
 
 @property (nonatomic) AVAudioPlayer * backgroundMusicPlayer;
+@property (nonatomic) AVAudioPlayer * soundEffectsPlayer;
 
 @property (nonatomic) Map *map;
 @property (nonatomic) NSInteger width;
