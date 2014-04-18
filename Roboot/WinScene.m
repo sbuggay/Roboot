@@ -7,7 +7,7 @@
 //
 
 #import "WinScene.h"
-#import "MyScene.h"
+#import "Game.h"
 
 @implementation WinScene
 

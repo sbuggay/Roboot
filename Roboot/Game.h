@@ -9,11 +9,16 @@
 #import <SpriteKit/SpriteKit.h>
 #import <AVFoundation/AVFoundation.h>
 
+#import "WinScene.h"
 #import "Map.h"
 
+#define ROBOOTBITMASK 1 << 0
+#define WRENCHBITMASK 1 << 1
+#define PORTALBITMASK 1 << 2
 
-@interface MyScene : SKScene {
-    SKNode *roboot;
+@interface Game : SKScene<SKPhysicsContactDelegate> {
+    SKSpriteNode *roboot;
+    SKSpriteNode *exit;
     int x, y;
     int tx, ty;
     bool moving;
@@ -26,6 +31,8 @@
     bool runningCommands;
     
     float background;
+    
+    int collectedWrenches;
 }
 
 @property (nonatomic) AVAudioPlayer * backgroundMusicPlayer;
@@ -35,6 +42,10 @@
 @property (nonatomic) NSInteger width;
 @property (nonatomic) NSInteger height;
 
+
+-(void)startLevel;
+-(void)loadLevel:(NSString *)level;
 -(void)runCommand:(int)action;
+
 
 @end
