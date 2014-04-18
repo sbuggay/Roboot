@@ -43,6 +43,7 @@
 		07B103861901870000020EF6 /* failScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 07B103831901870000020EF6 /* failScreen.png */; };
 		07B103871901870000020EF6 /* levelComplete.png in Resources */ = {isa = PBXBuildFile; fileRef = 07B103841901870000020EF6 /* levelComplete.png */; };
 		07B103881901870000020EF6 /* start.png in Resources */ = {isa = PBXBuildFile; fileRef = 07B103851901870000020EF6 /* start.png */; };
+		07B1038A19019DF200020EF6 /* tutorial.txt in Resources */ = {isa = PBXBuildFile; fileRef = 07B1038919019DF200020EF6 /* tutorial.txt */; };
 		F38C64DA190029EF00F676DF /* abyss.png in Resources */ = {isa = PBXBuildFile; fileRef = F38C64D9190029EF00F676DF /* abyss.png */; };
 		F3A2108418FB8BBD0004BB55 /* MapReader.m in Sources */ = {isa = PBXBuildFile; fileRef = F3A2108318FB8BBD0004BB55 /* MapReader.m */; };
 		F3A36F5318FE42EC00A89FFB /* LossScene.m in Sources */ = {isa = PBXBuildFile; fileRef = F3A36F5218FE42EC00A89FFB /* LossScene.m */; };
@@ -124,6 +125,7 @@
 		07B103831901870000020EF6 /* failScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = failScreen.png; sourceTree = "<group>"; };
 		07B103841901870000020EF6 /* levelComplete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = levelComplete.png; sourceTree = "<group>"; };
 		07B103851901870000020EF6 /* start.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = start.png; sourceTree = "<group>"; };
+		07B1038919019DF200020EF6 /* tutorial.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = tutorial.txt; sourceTree = "<group>"; };
 		F38C64D9190029EF00F676DF /* abyss.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = abyss.png; sourceTree = "<group>"; };
 		F3A2108218FB8BBD0004BB55 /* MapReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapReader.h; sourceTree = "<group>"; };
 		F3A2108318FB8BBD0004BB55 /* MapReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapReader.m; sourceTree = "<group>"; };
@@ -266,6 +268,7 @@
 				07B103831901870000020EF6 /* failScreen.png */,
 				07B103841901870000020EF6 /* levelComplete.png */,
 				07B103851901870000020EF6 /* start.png */,
+				07B1038919019DF200020EF6 /* tutorial.txt */,
 				F3A7566618FDE6F800402ACC /* level_1.txt */,
 				F3A7566718FDE6F800402ACC /* level_2.txt */,
 				F3A7566818FDE6F800402ACC /* level_3.txt */,
@@ -386,6 +389,7 @@
 				07249E3918DE97DA001C2F43 /* song.mp3 in Resources */,
 				F3A7566B18FDE6F800402ACC /* level_3.txt in Resources */,
 				07249E3418DE97DA001C2F43 /* roboot_back.png in Resources */,
+				07B1038A19019DF200020EF6 /* tutorial.txt in Resources */,
 				07249E2418DE9799001C2F43 /* fall.png in Resources */,
 				07249E3B18DE97DA001C2F43 /* wall.png in Resources */,
 				F3CF17391900843700CF7875 /* portalOpening.mp3 in Resources */,
