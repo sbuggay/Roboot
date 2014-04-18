@@ -288,16 +288,16 @@
 				07249E2E18DE97DA001C2F43 /* tile.png */,
 				07249E2F18DE97DA001C2F43 /* wall.png */,
 				07249E3018DE97DA001C2F43 /* wrench.png */,
-				07249E2D18DE97DA001C2F43 /* song.mp3 */,
 				F3CF173D19008C5800CF7875 /* buttonThree.mp3 */,
 				F3CF173E19008C5800CF7875 /* buttonOne.mp3 */,
 				F3CF173F19008C5800CF7875 /* buttonFour.mp3 */,
 				F3CF174019008C5800CF7875 /* buttonTwo.mp3 */,
+				F3CF17361900843700CF7875 /* endMusic.mp3 */,
+				F3CF17371900843700CF7875 /* getWrench.mp3 */,
 				F3CF17331900843700CF7875 /* nextLevel.mp3 */,
 				F3CF17341900843700CF7875 /* portalOpening.mp3 */,
 				F3CF17351900843700CF7875 /* robootMoving.mp3 */,
-				F3CF17361900843700CF7875 /* endMusic.mp3 */,
-				F3CF17371900843700CF7875 /* getWrench.mp3 */,
+				07249E2D18DE97DA001C2F43 /* song.mp3 */,
 			);
 			name = resources;
 			sourceTree = "<group>";
