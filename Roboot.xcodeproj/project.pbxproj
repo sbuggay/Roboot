@@ -17,7 +17,7 @@
 		070361F418A86E16006AB301 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 070361F218A86E16006AB301 /* Main_iPhone.storyboard */; };
 		070361F718A86E16006AB301 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 070361F518A86E16006AB301 /* Main_iPad.storyboard */; };
 		070361FA18A86E16006AB301 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 070361F918A86E16006AB301 /* ViewController.m */; };
-		070361FD18A86E16006AB301 /* MyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 070361FC18A86E16006AB301 /* MyScene.m */; };
+		070361FD18A86E16006AB301 /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = 070361FC18A86E16006AB301 /* Game.m */; };
 		0703620118A86E16006AB301 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0703620018A86E16006AB301 /* Images.xcassets */; };
 		0703620818A86E16006AB301 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0703620718A86E16006AB301 /* XCTest.framework */; };
 		0703620918A86E16006AB301 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 070361DE18A86E16006AB301 /* Foundation.framework */; };
@@ -40,6 +40,9 @@
 		07404D3618EC7DCC009C8D31 /* ButtonLeft.png in Resources */ = {isa = PBXBuildFile; fileRef = 07404D3218EC7DCC009C8D31 /* ButtonLeft.png */; };
 		07404D3718EC7DCC009C8D31 /* ButtonRight.png in Resources */ = {isa = PBXBuildFile; fileRef = 07404D3318EC7DCC009C8D31 /* ButtonRight.png */; };
 		07A2993F18FCB82200038483 /* StartScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 07A2993E18FCB82200038483 /* StartScene.m */; };
+		07B103861901870000020EF6 /* failScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 07B103831901870000020EF6 /* failScreen.png */; };
+		07B103871901870000020EF6 /* levelComplete.png in Resources */ = {isa = PBXBuildFile; fileRef = 07B103841901870000020EF6 /* levelComplete.png */; };
+		07B103881901870000020EF6 /* start.png in Resources */ = {isa = PBXBuildFile; fileRef = 07B103851901870000020EF6 /* start.png */; };
 		F38C64DA190029EF00F676DF /* abyss.png in Resources */ = {isa = PBXBuildFile; fileRef = F38C64D9190029EF00F676DF /* abyss.png */; };
 		F3A2108418FB8BBD0004BB55 /* MapReader.m in Sources */ = {isa = PBXBuildFile; fileRef = F3A2108318FB8BBD0004BB55 /* MapReader.m */; };
 		F3A36F5318FE42EC00A89FFB /* LossScene.m in Sources */ = {isa = PBXBuildFile; fileRef = F3A36F5218FE42EC00A89FFB /* LossScene.m */; };
@@ -84,8 +87,8 @@
 		070361F618A86E16006AB301 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 		070361F818A86E16006AB301 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		070361F918A86E16006AB301 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		070361FB18A86E16006AB301 /* MyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyScene.h; sourceTree = "<group>"; };
-		070361FC18A86E16006AB301 /* MyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyScene.m; sourceTree = "<group>"; };
+		070361FB18A86E16006AB301 /* Game.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
+		070361FC18A86E16006AB301 /* Game.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Game.m; sourceTree = "<group>"; };
 		0703620018A86E16006AB301 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		0703620618A86E16006AB301 /* RobootTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RobootTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0703620718A86E16006AB301 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -118,9 +121,9 @@
 		07A2993D18FCB82200038483 /* StartScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartScene.h; sourceTree = "<group>"; };
 		07A2993E18FCB82200038483 /* StartScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartScene.m; sourceTree = "<group>"; };
 		07A2994018FCC5F800038483 /* ButtonAccept.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ButtonAccept.png; sourceTree = "<group>"; };
-		F373FE2F18FCB68D0079ACC5 /* start.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = start.png; path = /Users/Gideon/Desktop/GameDesign/Roboot/Roboot/start.png; sourceTree = "<absolute>"; };
-		F373FE3018FCB68D0079ACC5 /* levelComplete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = levelComplete.png; path = /Users/Gideon/Desktop/GameDesign/Roboot/Roboot/levelComplete.png; sourceTree = "<absolute>"; };
-		F373FE3118FCB68D0079ACC5 /* failScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = failScreen.png; path = /Users/Gideon/Desktop/GameDesign/Roboot/Roboot/failScreen.png; sourceTree = "<absolute>"; };
+		07B103831901870000020EF6 /* failScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = failScreen.png; sourceTree = "<group>"; };
+		07B103841901870000020EF6 /* levelComplete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = levelComplete.png; sourceTree = "<group>"; };
+		07B103851901870000020EF6 /* start.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = start.png; sourceTree = "<group>"; };
 		F38C64D9190029EF00F676DF /* abyss.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = abyss.png; sourceTree = "<group>"; };
 		F3A2108218FB8BBD0004BB55 /* MapReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapReader.h; sourceTree = "<group>"; };
 		F3A2108318FB8BBD0004BB55 /* MapReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapReader.m; sourceTree = "<group>"; };
@@ -210,8 +213,8 @@
 				070361F518A86E16006AB301 /* Main_iPad.storyboard */,
 				070361F818A86E16006AB301 /* ViewController.h */,
 				070361F918A86E16006AB301 /* ViewController.m */,
-				070361FB18A86E16006AB301 /* MyScene.h */,
-				070361FC18A86E16006AB301 /* MyScene.m */,
+				070361FB18A86E16006AB301 /* Game.h */,
+				070361FC18A86E16006AB301 /* Game.m */,
 				07A2993D18FCB82200038483 /* StartScene.h */,
 				07A2993E18FCB82200038483 /* StartScene.m */,
 				F3A36F5118FE42EC00A89FFB /* LossScene.h */,
@@ -260,6 +263,9 @@
 		07A2993C18FB82E000038483 /* resources */ = {
 			isa = PBXGroup;
 			children = (
+				07B103831901870000020EF6 /* failScreen.png */,
+				07B103841901870000020EF6 /* levelComplete.png */,
+				07B103851901870000020EF6 /* start.png */,
 				F3A7566618FDE6F800402ACC /* level_1.txt */,
 				F3A7566718FDE6F800402ACC /* level_2.txt */,
 				F3A7566818FDE6F800402ACC /* level_3.txt */,
@@ -272,9 +278,6 @@
 				07A2994018FCC5F800038483 /* ButtonAccept.png */,
 				07404D3418EC7DCC009C8D31 /* ButtonUp.png */,
 				07249E1E18DE9799001C2F43 /* circuit.png */,
-				F373FE2F18FCB68D0079ACC5 /* start.png */,
-				F373FE3018FCB68D0079ACC5 /* levelComplete.png */,
-				F373FE3118FCB68D0079ACC5 /* failScreen.png */,
 				07249E1F18DE9799001C2F43 /* fall.png */,
 				07249E2518DE97DA001C2F43 /* mine.png */,
 				07249E2618DE97DA001C2F43 /* portal-closed.png */,
@@ -284,7 +287,6 @@
 				07249E2918DE97DA001C2F43 /* roboot_left.png */,
 				07249E2A18DE97DA001C2F43 /* roboot_right.png */,
 				07249E2B18DE97DA001C2F43 /* robot.png */,
-				F373FE2F18FCB68D0079ACC5 /* start.png */,
 				07249E2E18DE97DA001C2F43 /* tile.png */,
 				07249E2F18DE97DA001C2F43 /* wall.png */,
 				07249E3018DE97DA001C2F43 /* wrench.png */,
@@ -399,8 +401,11 @@
 				07249E3118DE97DA001C2F43 /* mine.png in Resources */,
 				07249E3718DE97DA001C2F43 /* robot.png in Resources */,
 				F3A7566A18FDE6F800402ACC /* level_2.txt in Resources */,
+				07B103871901870000020EF6 /* levelComplete.png in Resources */,
 				F3CF174119008C5800CF7875 /* buttonThree.mp3 in Resources */,
 				07404D3618EC7DCC009C8D31 /* ButtonLeft.png in Resources */,
+				07B103861901870000020EF6 /* failScreen.png in Resources */,
+				07B103881901870000020EF6 /* start.png in Resources */,
 				F3CF174219008C5800CF7875 /* buttonOne.mp3 in Resources */,
 				07249E3618DE97DA001C2F43 /* roboot_right.png in Resources */,
 				F3CF173A1900843700CF7875 /* robootMoving.mp3 in Resources */,
@@ -426,7 +431,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				070361FD18A86E16006AB301 /* MyScene.m in Sources */,
+				070361FD18A86E16006AB301 /* Game.m in Sources */,
 				F3DE4D1718FE3D2200AB8D94 /* WinScene.m in Sources */,
 				F3A2108418FB8BBD0004BB55 /* MapReader.m in Sources */,
 				F3A36F5318FE42EC00A89FFB /* LossScene.m in Sources */,

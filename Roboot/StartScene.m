@@ -7,7 +7,7 @@
 //
 
 #import "StartScene.h"
-#import "MyScene.h"
+#import "Game.h"
 
 @implementation StartScene
 
@@ -28,7 +28,7 @@
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     /* Called when a touch begins */
     
-    SKScene *game  = [[MyScene alloc] initWithSize:self.size];
+    SKScene *game  = [[Game alloc] initWithSize:self.size];
     SKTransition *doors = [SKTransition doorsOpenVerticalWithDuration:1];
     [self.view presentScene:game transition:doors];
     
