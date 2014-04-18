@@ -18,7 +18,11 @@
     if (self = [super initWithSize:size]) {
         /* Setup your scene here */
         
-        
+        [[NSNotificationCenter defaultCenter]
+         addObserver:self
+         selector:@selector(appWillEnterBackground)
+         name:UIApplicationWillResignActiveNotification
+         object:NULL];
         
         
         
@@ -261,8 +265,8 @@
 -(void)update:(CFTimeInterval)currentTime {
     /* Called before each frame is rendered */
     if (runningCommands) {
-        if (currentCommand >= commandNum) {
-            runningCommands = false;
+        if (currentCommand > commandNum) {
+            [self startLevel];
         }
         else if (moving == false){
             [self runCommand:commands[currentCommand++]];
@@ -362,6 +366,30 @@
         }
     }
     
+}
+
+- (void)appWillEnterBackground
+{
+    SKView *skView = (SKView *)self.view;
+    skView.paused = YES;
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+    [[NSNotificationCenter defaultCenter]
+     addObserver:self
+     selector:@selector(appWillEnterForeground)
+     name:UIApplicationWillEnterForegroundNotification
+     object:NULL];
+}
+
+- (void)appWillEnterForeground
+{
+    SKView * skView = (SKView *)self.view;
+    skView.paused = NO;
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+    [[NSNotificationCenter defaultCenter]
+     addObserver:self
+     selector:@selector(appWillEnterBackground)
+     name:UIApplicationWillResignActiveNotification
+     object:NULL];
 }
 
 @end
