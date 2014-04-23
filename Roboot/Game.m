@@ -18,48 +18,13 @@
     if (self = [super initWithSize:size]) {
         /* Setup your scene here */
         
+        [[NSNotificationCenter defaultCenter]
+         addObserver:self
+         selector:@selector(appWillEnterBackground)
+         name:UIApplicationWillResignActiveNotification
+         object:NULL];
         
         
-        NSError *error;
-        NSURL * backgroundMusicURL = [[NSBundle mainBundle] URLForResource:@"song" withExtension:@"mp3"];
-        self.backgroundMusicPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:backgroundMusicURL error:&error];
-        self.backgroundMusicPlayer.numberOfLoops = -1;
-        [self.backgroundMusicPlayer prepareToPlay];
-        [self.backgroundMusicPlayer play];
-        
-        //add controls
-        SKSpriteNode *leftNode = [SKSpriteNode spriteNodeWithImageNamed:@"ButtonLeft.png"];
-        leftNode.position = CGPointMake(25, 25);
-        leftNode.name = @"leftNode";//how the node is identified later
-        leftNode.zPosition = 1.0;
-        [self addChild:leftNode];
-        
-        SKSpriteNode *downNode = [SKSpriteNode spriteNodeWithImageNamed:@"ButtonDown.png"];
-        downNode.position = CGPointMake(75, 25);
-        downNode.name = @"downNode";//how the node is identified later
-        downNode.zPosition = 1.0;
-        [self addChild:downNode];
-        
-        SKSpriteNode *upNode = [SKSpriteNode spriteNodeWithImageNamed:@"ButtonUp.png"];
-        upNode.position = CGPointMake(125, 25);
-        upNode.name = @"upNode";//how the node is identified later
-        upNode.zPosition = 1.0;
-        [self addChild:upNode];
-        
-        SKSpriteNode *rightNode = [SKSpriteNode spriteNodeWithImageNamed:@"ButtonRight.png"];
-        rightNode.position = CGPointMake(175, 25);
-        rightNode.name = @"rightNode";//how the node is identified later
-        rightNode.zPosition = 1.0;
-        [self addChild:rightNode];
-        
-        SKSpriteNode *acceptNode = [SKSpriteNode spriteNodeWithImageNamed:@"ButtonAccept.png"];
-        acceptNode.position = CGPointMake(225, 25);
-        acceptNode.name = @"acceptNode";//how the node is identified later
-        acceptNode.zPosition = 1.0;
-        [self addChild:acceptNode];
-        
-        self.physicsWorld.gravity = CGVectorMake(0, 0);
-        self.physicsWorld.contactDelegate = self;
         
         [self startLevel];
     }
@@ -127,10 +92,56 @@
     runningCommands = false;
     moving = false;
     speed = 1.5;
+    direction = 0;
     
     collectedWrenches = 0;
     
-    [self loadLevel:@"level_1"];
+    [self removeAllChildren];
+    
+    NSError *error;
+    NSURL * backgroundMusicURL = [[NSBundle mainBundle] URLForResource:@"song" withExtension:@"mp3"];
+    self.backgroundMusicPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:backgroundMusicURL error:&error];
+    self.backgroundMusicPlayer.numberOfLoops = -1;
+    [self.backgroundMusicPlayer prepareToPlay];
+    [self.backgroundMusicPlayer play];
+    
+    //add controls
+    SKSpriteNode *leftNode = [SKSpriteNode spriteNodeWithImageNamed:@"ButtonLeft.png"];
+    leftNode.position = CGPointMake(25, 25);
+    leftNode.name = @"leftNode";//how the node is identified later
+    leftNode.zPosition = 1.0;
+    [self addChild:leftNode];
+    
+    SKSpriteNode *downNode = [SKSpriteNode spriteNodeWithImageNamed:@"ButtonDown.png"];
+    downNode.position = CGPointMake(75, 25);
+    downNode.name = @"downNode";//how the node is identified later
+    downNode.zPosition = 1.0;
+    [self addChild:downNode];
+    
+    SKSpriteNode *upNode = [SKSpriteNode spriteNodeWithImageNamed:@"ButtonUp.png"];
+    upNode.position = CGPointMake(125, 25);
+    upNode.name = @"upNode";//how the node is identified later
+    upNode.zPosition = 1.0;
+    [self addChild:upNode];
+    
+    SKSpriteNode *rightNode = [SKSpriteNode spriteNodeWithImageNamed:@"ButtonRight.png"];
+    rightNode.position = CGPointMake(175, 25);
+    rightNode.name = @"rightNode";//how the node is identified later
+    rightNode.zPosition = 1.0;
+    [self addChild:rightNode];
+    
+    SKSpriteNode *acceptNode = [SKSpriteNode spriteNodeWithImageNamed:@"ButtonAccept.png"];
+    acceptNode.position = CGPointMake(225, 25);
+    acceptNode.name = @"acceptNode";//how the node is identified later
+    acceptNode.zPosition = 1.0;
+    [self addChild:acceptNode];
+    
+    self.physicsWorld.gravity = CGVectorMake(0, 0);
+    self.physicsWorld.contactDelegate = self;
+    
+    [self loadLevel:@"tutorial"];
+    
+    
 }
 
 -(void)loadLevel:(NSString *)level {
@@ -185,7 +196,7 @@
                     item = [SKSpriteNode spriteNodeWithImageNamed:@"wrench"];
                     item.position = point;
                     item.zPosition = 1.0;
-                    item.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:item.frame.size];
+                    item.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:CGSizeMake(item.frame.size.width / 2, item.size.height / 2)];
                     item.physicsBody.usesPreciseCollisionDetection = YES;
                     item.physicsBody.categoryBitMask = WRENCHBITMASK;
 //                    item.physicsBody.collisionBitMask;
@@ -254,8 +265,8 @@
 -(void)update:(CFTimeInterval)currentTime {
     /* Called before each frame is rendered */
     if (runningCommands) {
-        if (currentCommand >= commandNum) {
-            runningCommands = false;
+        if (currentCommand > commandNum) {
+            [self startLevel];
         }
         else if (moving == false){
             [self runCommand:commands[currentCommand++]];
@@ -307,9 +318,22 @@
         exit.texture = [SKTexture textureWithImageNamed:@"portal-open"];
     }
     
+    if ([map getValueAtX:tx andY:ty] == 'a') {
+        [self startLevel];
+    }
+    
+    if ([map getValueAtX:tx andY:ty] == 'f') {
+        
+        if (collectedWrenches >= 3) {
+            SKScene *win  = [[WinScene alloc] initWithSize:self.size];
+            NSLog(@"Win!");
+            [self.view presentScene:win];
+        }
+    }
+    
     [roboot setPosition:CGPointMake(x, y)];
     
-    self.backgroundColor = [SKColor colorWithRed:sin(background * 2) green:cos(background) blue:(sin(background + cos(background * 2)) / 2) alpha:1];
+    self.backgroundColor = [SKColor colorWithRed:0 green:0 blue:0 alpha:1];
     
     background += .001;
 }
@@ -334,14 +358,38 @@
     }
     
     if (firstBody.categoryBitMask == ROBOOTBITMASK && secondBody.categoryBitMask == PORTALBITMASK) {
-        NSLog(@"Win!");
+        
         if (collectedWrenches >= 3) {
+            NSLog(@"Win!");
             SKScene *win  = [[WinScene alloc] initWithSize:self.size];
-            SKTransition *doors = [SKTransition doorsOpenVerticalWithDuration:1];
-            [self.view presentScene:win transition:doors];
+            [self.view presentScene:win];
         }
     }
     
+}
+
+- (void)appWillEnterBackground
+{
+    SKView *skView = (SKView *)self.view;
+    skView.paused = YES;
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+    [[NSNotificationCenter defaultCenter]
+     addObserver:self
+     selector:@selector(appWillEnterForeground)
+     name:UIApplicationWillEnterForegroundNotification
+     object:NULL];
+}
+
+- (void)appWillEnterForeground
+{
+    SKView * skView = (SKView *)self.view;
+    skView.paused = NO;
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+    [[NSNotificationCenter defaultCenter]
+     addObserver:self
+     selector:@selector(appWillEnterBackground)
+     name:UIApplicationWillResignActiveNotification
+     object:NULL];
 }
 
 @end
